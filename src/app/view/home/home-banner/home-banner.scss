@@ -1,0 +1,66 @@
+
+.home-banner {
+  background: linear-gradient(263.23deg, rgba(39, 189, 188, 0.14) 0%, rgba(249, 211, 37, 0.14) 100%);
+  height: 616px;
+  width: 100% !important;
+  z-index: 1;
+  position: absolute;
+}
+
+.home-banner-description {
+  line-height: 28px;
+}
+
+.home-banner-margin {
+  justify-content: center;
+  display: flex;
+  margin-right: 175px;
+  margin-left: 150px;
+}
+
+.home-banner-btn {
+  &-more {
+    min-width: 168px !important;
+    background: linear-gradient(85.33deg, #27BDBC 0%, #18A2A1 100%);
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    border: none !important;
+    height: 50px;
+    padding: 12px 25px;
+
+    &-icon {
+      font-size: 20px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 15px;
+      cursor: pointer;
+      color: #2fbdbc;
+    }
+  }
+
+  &-video {
+
+    border: none;
+    font-weight: bold;
+    color: #373F47;
+
+    &-icon {
+      background-color: #F9D325;
+      width: 48px;
+      height: 48px;
+      padding: 15px;
+      border-radius: 15px;
+      cursor: pointer;
+
+    }
+  }
+}

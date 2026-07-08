@@ -1,0 +1,25 @@
+.nav{
+  background-color: white;
+  border-bottom: 2px solid #F9D325;
+  box-shadow: 0 2px 4px rgba(193, 193, 193, 0.3);
+  position: sticky  ;
+  width: 100%;
+  top: 0;
+  z-index: 998;
+
+ &-link{
+   font-size: 14px;
+   color: black;
+ }
+}
+.nav-btn{
+  height: 40px;
+  border: 1px solid #F0F0F7;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #373F47;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0 10px;
+}

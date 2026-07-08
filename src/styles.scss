@@ -1,3 +1,9 @@
+@use 'bootstrap/scss/bootstrap';
+@use 'styles/styles';
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+body{
+  background-color: #ffffff ;
+}
 a{
   text-decoration: none;
   color: black;

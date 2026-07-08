@@ -1,0 +1,23 @@
+.home-pillars{
+
+
+  &-item{
+
+
+   &-img{
+    &img{
+      width: 100%;
+      background-color: #2a2e6b;
+    }
+   }
+   &-description{
+     border-radius: 20px;
+     border: 1px solid #D3D3D3;
+     padding: 20px 30px 41px 30px;
+   }
+
+
+  }
+
+
+}
