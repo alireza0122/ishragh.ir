@@ -305,19 +305,19 @@ a{
 
 
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 13px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #b5b5b5;
+  background: #d8d8d8;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 
-  background: #9574ff !important;
+  background: #f9d141 !important;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #ffffff;
 }

@@ -1,1 +1,35 @@
-<p>home-news works!</p>
+<div class="home-news mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 ">
+        <div class=" d-flex mb-1">
+          <div class="shared-box">
+            <h3 class="p-0 m-0 shared-box-title fw-bold fs-32px">
+              جدیدترین اخبار
+            </h3>
+            <div class="dd"></div>
+          </div>
+        </div>
+
+        <div class="col-12">
+
+          <owl-carousel-o  [options]="customOptions">
+            @for (item of newsdata; track $index) {
+              <ng-template  carouselSlide>
+                <div class="news-item">
+                  <div class="news-item-box-img">
+                    <img class="news-item-box-img-top" [src]="item.img" [alt]="item.title">
+                  </div>
+                  <p class="my-3"></p>
+                  <h3 class="news-item-title fs-16px mx-2 text-justify text-over o2">{{ item.title }}</h3>
+                </div>
+              </ng-template>
+            }
+          </owl-carousel-o>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

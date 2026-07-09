@@ -5,7 +5,7 @@
   position: sticky  ;
   width: 100%;
   top: 0;
-  z-index: 998;
+  z-index: 1000000 !important;
 
  &-link{
    font-size: 14px;
