@@ -4,13 +4,45 @@
 .mmd{
   z-index: -1;
   color: #18A1A1;
+  right:  100px;
 }
 
-.main-dashboard-box-title{
+
+.shared-box {
+  font-weight: bold;
+  font-size: 32px;
   color: #18A1A1;
-  padding: 0 100px !important;
+  position: relative;
+  cursor: pointer !important;
+  &:hover .dd{
+    width: 100%;
+    border-radius: 16px;
+    cursor: pointer !important;
+  }
 }
-.main-dashboard-box-subtitle{
+
+.dd{
+  position: absolute;
+  background-color: #F9D325;
+  width: 49px;
+  height: 6px;
+  right: 1px;
+}
+.home-amar-box{
+  min-height: 112px;
+  background: #FFFFFF;
+  box-shadow: 10px 20px 20px rgba(193, 193, 193, 0.2);
+  border-radius: 20px;
+  width: 100%;
+}
+.home-amar-box-description{
   color: #18A1A1;
-  padding: 0 100px !important;
+
+}
+.home-amar-box-title{
+  color: #373F47;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }
