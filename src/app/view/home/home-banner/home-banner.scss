@@ -11,19 +11,19 @@
   line-height: 28px;
 }
 
-.home-banner-margin {
-  justify-content: center;
-  display: flex;
-
-}
-@media (min-width: 1450px) {
-  .home-banner-margin {
-    justify-content: center;
-    display: flex;
-    margin-right: 175px;
-    margin-left: 150px;
-  }
-}
+//.home-banner-margin {
+//  justify-content: space-around;
+//  display: flex;
+//
+//}
+  //@media (min-width: 1450px) {
+  //  .home-banner-margin {
+  //    justify-content: center;
+  //    display: flex;
+  //    margin-right: 175px;
+  //    margin-left: 150px;
+  //  }
+  //}
 
 .home-banner-btn {
   &-more {

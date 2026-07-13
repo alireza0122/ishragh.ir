@@ -1,0 +1,32 @@
+.home-escape {
+  background-color: #fafafa;
+
+  &-box {
+    &-btn {
+      background-color: transparent;
+      color: black;
+      font-weight: 700;
+      border: none;
+    }
+
+
+    &-icon {
+      padding: 5px;
+      border-radius: 16px;
+
+      &svg {
+        &path {
+          fill: white !important;
+        }
+      }
+      &-nimkat{
+        background-color: #1e9b81;
+        border-radius: 15px;
+      }
+
+    }
+
+  }
+
+
+}
