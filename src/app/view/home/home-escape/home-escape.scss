@@ -1,5 +1,6 @@
 .home-escape {
   background-color: #fafafa;
+  height: 100%;
 
   &-box {
     &-btn {
@@ -19,14 +20,70 @@
           fill: white !important;
         }
       }
-      &-nimkat{
+
+      &-nimkat {
         background-color: #1e9b81;
         border-radius: 15px;
+      }
+    }
+  }
+}
+
+
+.fanos {
+  &-slide {
+    background: linear-gradient(256.17deg, #159B80 0%, #FE916A 98.85%);
+    //height: 350px;
+    //background-image: url("/img/images.jfif");
+    //background-size: 100% 100%;
+    //background-repeat: no-repeat;
+    //background-position: center;
+    //background-position: center;
+    border-radius: 20px;
+
+    &-header {
+      &-title {
+        color: white;
+
+      }
+
+      &-btn {
+        float: left;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 4px 16px;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 15px;
+        background-color: transparent;
       }
 
     }
 
+    &-body {
+
+      &-item {
+        background-color: white;
+        border-radius: 15px;
+        aspect-ratio: 4/2;
+
+        &-img {
+          width: 100%;
+          border-radius: 15px;
+          aspect-ratio: 9/5;
+        }
+
+
+      }
+    }
+
+    &-footer {
+
+    }
+
+
   }
-
-
 }
+
+

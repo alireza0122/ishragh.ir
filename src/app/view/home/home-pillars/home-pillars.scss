@@ -1,5 +1,6 @@
 .home-pillars {
-
+  min-height: 470px;
+  user-select: none;
 
   &-item {
 
@@ -10,9 +11,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+
         &-up {
           font-size: 20px;
-          border: 2px solid  black;
+          border: 2px solid black;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -21,11 +23,22 @@
           border-radius: 50%;
           cursor: pointer;
           color: black;
+          transition: 0.5s all;
+
+          &:hover {
+            transform: scale(0.9);
+            transition: 0.5s all;
+          }
         }
 
-        &-down{
+        &-down {
+          &:hover {
+            transform: scale(0.9);
+            transition: 0.5s all;
+          }
+
           font-size: 20px;
-          border: 2px solid  black;
+          border: 2px solid black;
 
           display: flex;
           justify-content: center;
@@ -55,25 +68,26 @@
         justify-content: center;
         padding: 10px;
 
-        &:after{
+        &:after {
           content: '';
           position: absolute;
           width: 120px;
           height: 120px;
           background-color: var(--after-bg-color);
-          z-index: -1;
+          z-index: -3;
           border-radius: 20px;
           top: 0;
           transform: rotate(6.05deg);
           right: -8px;
           transition: 0.2s all;
-
         }
-        &:hover:after{
-          transform: rotate(0deg)   ;
+
+        &:hover:after {
+          transform: rotate(0deg);
           right: 0;
           transition: 0.2s all;
         }
+
         &img {
 
         }
@@ -150,6 +164,8 @@
         border: 1px solid #D3D3D3;
         padding: 20px 30px 41px 30px;
         position: relative;
+        user-select: text;
+
       }
 
 
@@ -175,4 +191,175 @@
 .textT {
   transition: all 1s !important;
   //padding: 0 8px;
+}
+
+//
+//.fade-out {
+//
+//}
+.content {
+  transition: 0.1s all;
+  width: 120px;
+  height: 120px;
+  //background: #FFFFFF;
+  box-shadow: -2px 4px 30px rgba(193, 193, 193, 0.3);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fade-out:after {
+
+  z-index: 0;
+  border-radius: 20px;
+  top: 0;
+  transform: rotate(0deg);
+  right: 0;
+  transition: 0.01s all;
+
+}
+
+.fade-out:hover:after {
+  transform: rotate(0deg);
+  right: 0;
+  transition: 5s all !important;
+}
+
+.content .content-img {
+  display: none;
+}
+
+.fade-out .content-img {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  width: 35%;
+  top: 33%;
+  fill: #1e9b81 !important;
+}
+
+.content-img {
+  filter: brightness(100%) saturate(100%) invert(100%) sepia(100%) saturate(4000%) hue-rotate(150deg);
+
+}
+
+.home-pillars-item-box-description {
+  min-height: 150px;
+  position: relative;
+}
+
+.description-loader {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  right: 45%;
+
+}
+
+.description-loader img {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(600%) hue-rotate(130deg);
+  width: 50px;
+}
+
+//seeeeeeeeeeeeec 222222222222222222222222
+.circle-wrapper{
+  width: 430px;
+  height: 430px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.circle-main{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  border:1px solid #ddd;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:5;
+  padding: 100px;
+  margin: 100px !important;
+}
+.orbit-1 {
+  position: absolute;
+  border: 1px solid #bcbcbc;
+  border-radius: 50%;
+  animation: orbit-1 15s linear infinite;
+}
+.orbit-2 {
+  position: absolute;
+  border: 1px solid #bcbcbc;
+  border-radius: 50%;
+
+  animation: orbit-1 15s linear infinite;
+}
+
+.orbit-item {
+  width: 65px;
+  height: 65px;
+  //padding:   10px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+
+  animation: orbitReverse 15s linear infinite;
+}
+
+.orbit-item.top {
+  top: -32px;
+}
+
+/* عکس پایین */
+.orbit-item.bottom {
+  bottom: -32px;
+}
+@keyframes orbit-1{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+@keyframes orbit-2{
+  0%{
+    transform:rotate(0deg);
+  }
+  50%{
+    transform:rotate(360deg);
+  }
+  100%{
+    transform:rotate(180deg);
+
+  }
+
+}
+
+@keyframes orbitReverse{
+  from{
+    transform:translateX(-50%) rotate(0deg);
+  }
+  to{
+    transform:translateX(-50%) rotate(-360deg);
+  }
+}
+.orbit-1 {
+  width: 320px;
+  height: 320px;
+}
+
+.orbit-2 {
+  width: 450px;
+  height: 450px;
 }

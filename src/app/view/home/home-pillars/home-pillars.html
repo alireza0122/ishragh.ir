@@ -1,57 +1,103 @@
-<div class="home-pillars mb-5 pb-5 ">
+<div class="home-pillars">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-6">
-        <div class="home-pillars-item">
-          <div class="home-pillars-item-img my-5 d-flex justify-content-between align-items-center  ">
+        <div class="home-pillars-item  ">
+          <div class="home-pillars-item-img mb-3 d-flex justify-content-between align-items-center  ">
             <div class="d-flex gap-3">
-              <div class="home-pillars-item-img-top"
+              <div class="home-pillars-item-img-top content"
                    [style]="{
                      '--after-bg-color': currentItem().color
                     }"
-                >
-                  <img [src]=" currentItem().img
-              " alt="fanos-logo-unlable">
-            </div>
-            <div class="home-pillars-item-img-icon flex-column justify-content-center">
-              <img [src]="currentItem().imgiconA" alt="description">
-              <img [src]="currentItem().imgiconB" alt="description">
-            </div>
-          </div>
+                   [class.fade-out]="isAnimating()"
+              >
 
-          <div class="home-pillars-item-img-flsh">
-            <i class="fa-solid fa-chevron-up home-pillars-item-img-flsh-up"
-               (click)="goNext()"
-            ></i>
-            <i class="fa-solid fa-chevron-down home-pillars-item-img-flsh-down"
-               (click)="goPrevious()"
-            ></i>
-          </div>
+                <img class="" [src]=" currentItem().img" alt="fanos-logo-unlable">
+                <img class="content-img" src="/img/loader7 (1).svg" alt="fddddddddd">
 
-        </div>
-        <div class="home-pillars-item-box">
-          <p class="home-pillars-item-box-description text-justify">
-            {{ currentItem().description }}
-          </p>
+              </div>
+
+              <div class="home-pillars-item-img-icon flex-column justify-content-center">
+                <img [src]="currentItem().imgiconA" alt="description">
+                <img [src]="currentItem().imgiconB" alt="description">
+              </div>
+            </div>
+
+            <div class="home-pillars-item-img-flsh">
+              <i class="fa-solid fa-chevron-up home-pillars-item-img-flsh-up"
+                 (click)="goNext()"
+              ></i>
+              <i class="fa-solid fa-chevron-down home-pillars-item-img-flsh-down"
+                 (click)="goPrevious()"
+              ></i>
+            </div>
+
+          </div>
           <div class="home-pillars-item-box">
-            <button class="home-pillars-item-box-more p-1 pe-3"
+            <div class="home-pillars-item-box-description">
 
-                    [style.background-color]="currentItem().color">
+              <p class="text-justify" [class.opacity-0]="isAnimating()">
+                {{ currentItem().description }}
+              </p>
+
+              @if (isAnimating()) {
+                <div class="description-loader">
+                  <img src="/img/loader7 (1).svg">
+                </div>
+              }
+
+            </div>
+            <div class="home-pillars-item-box">
+              <button class="home-pillars-item-box-more p-1 pe-3"
+
+                      [style.background-color]="currentItem().color">
                  <span class="text">
                   {{ currentItem().btn }}
                 </span>
-              <i [style.background-color]="currentItem().color"
-                 class="fa-solid fa-arrow-left home-pillars-item-box-more-icon"></i>
-            </button>
+                <i [style.background-color]="currentItem().color"
+                   class="fa-solid fa-arrow-left home-pillars-item-box-more-icon"></i>
+              </button>
+            </div>
           </div>
+
         </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+
+        <div class="circle-wrapper">
+
+
+          <div class="circle-main ">
+            <img class="" src="/img/mid-circle-logo.svg" alt="">
+          </div>
+
+
+          <div class="orbit orbit-1 ">
+            <div class="orbit-item top d-flex justify-content-center">
+              <img class="w-50" src="/img/3dal-logo.svg" alt="">
+            </div>
+            <div class="orbit-item bottom d-flex justify-content-center">
+              <img class="w-50" src="/img/4sogh-logo.svg" alt="">
+            </div>
+          </div>
+
+
+          <div class="orbit orbit-2 ">
+            <div class="orbit-item top d-flex justify-content-center">
+              <img class="w-50" src="/img/kariz-logo.svg" alt="">
+            </div>
+
+            <div class="orbit-item bottom d-flex justify-content-center">
+              <img class="w-50" src="/img/fanoos-logo.svg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
 
       </div>
     </div>
-    <div class="col-6">
-
-    </div>
   </div>
-</div>
 </div>
 

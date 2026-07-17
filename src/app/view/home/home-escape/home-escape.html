@@ -1,6 +1,6 @@
-<div class="home-escape mt-3 p-3 my-5">
+<div class="home-escape mt-3 py-5   p-3 ">
   <div class="container ">
-    <div class="row">
+    <div class="row align-items-center">
 
       <div class="col-4">
         <div class="home-escape-box d-flex justify-content-between align-items-center flex-column ">
@@ -115,11 +115,58 @@
 
         </div>
       </div>
+      <div class="col-8">
+        <div class="fanos-slide p-3 pb-1 ps-0">
+          <div class="fanos-slide-header d-flex justify-content-between align-items-center">
+            <h3 class="fanos-slide-header-title fs-16px fw-900">
+              نیمکت؛ دوره‌ها و تک‌درس‌های صوتی و تصویری
+            </h3>
+            <button class="fanos-slide-header-btn">
+              434 درس
+            </button>
+          </div>
+          <div class="fanos-slide-body">
+            <owl-carousel-o  [options]="customOptions">
+              @for (item of Fanos; track $index) {
+                <ng-template  carouselSlide>
+                  <div class="fanos-slide-body-item p-2">
+                    <div class="fanos-slide-body-item-img">
+                      <img class="fanos-slide-body-item-img " [src]="item.img" [alt]="item.title">
+                    </div>
+                    <div class="py-2">
+                      <h1 class="fanos-slide-body-item-title fs-16px fw-900 text-over o1">{{item.title}}</h1>
+                      <h3 class="fanos-slide-body-item-user fs-16px mx-2 text-justify text-over o2 fs-14px text-color">{{ item.user }}</h3>
+                      <h3 class="fanos-slide-body-item-part fs-16px mx-2 text-justify text-over o2 fs-14px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+                          <g clip-path="url(#clip0_51_599)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66545 0H21.3295C22.0358 0.00390829 22.7123 0.300565 23.2122 0.825666C23.7121 1.35077 23.9951 2.062 24 2.80519V12.6257C23.9946 13.3685 23.7112 14.0791 23.2114 14.6037C22.7116 15.1283 22.0355 15.4247 21.3295 15.4286H6.66545C5.96022 15.4235 5.2852 15.1266 4.78631 14.6021C4.28741 14.0776 4.0047 13.3677 3.99927 12.6257V2.80519C4.00413 2.06279 4.28659 1.35224 4.78555 0.827271C5.2845 0.302298 5.95984 0.00511089 6.66545 0V0ZM21.948 12.8966C21.9812 12.8106 21.9975 12.7184 21.996 12.6257V2.80519C21.9976 2.71263 21.9815 2.62067 21.9486 2.53481C21.9157 2.44895 21.8666 2.37095 21.8044 2.30549C21.7422 2.24002 21.6681 2.18843 21.5864 2.15379C21.5048 2.11915 21.4174 2.10218 21.3295 2.1039H6.66655C6.57857 2.10218 6.49116 2.11915 6.40956 2.15379C6.32795 2.18843 6.25382 2.24002 6.1916 2.30549C6.12938 2.37095 6.08034 2.44895 6.04742 2.53481C6.0145 2.62067 5.99837 2.71263 6 2.80519V12.6257C5.99838 12.7181 6.01447 12.81 6.04732 12.8958C6.08018 12.9816 6.12912 13.0595 6.19122 13.125C6.25333 13.1904 6.32732 13.242 6.4088 13.2767C6.49028 13.3114 6.57757 13.3285 6.66545 13.327H21.3295C21.4618 13.3295 21.5918 13.2897 21.7023 13.2128C21.8127 13.136 21.8984 13.0257 21.948 12.8966ZM19.9964 17.5325H3.33273C3.15701 17.5349 2.98261 17.5003 2.81981 17.4307C2.65701 17.3611 2.50912 17.2579 2.38486 17.1272C2.2606 16.9964 2.16249 16.8408 2.09633 16.6695C2.03017 16.4982 1.99729 16.3147 1.99964 16.1299V2.80519C1.4715 2.81262 0.966972 3.03667 0.593487 3.42963C0.220002 3.82258 0.00705976 4.35341 0 4.90909L0 16.8312C0.00485762 17.5736 0.287318 18.2841 0.786275 18.8091C1.28523 19.3341 1.96057 19.6313 2.66618 19.6364H18C18.5275 19.6278 19.031 19.4032 19.4037 19.0104C19.7765 18.6176 19.989 18.0875 19.9964 17.5325ZM15.5596 7.58918L12.7331 9.50139V5.67696L15.5596 7.58918ZM13.6178 4.2296C13.3706 4.06243 13.0852 3.96839 12.7915 3.95736C12.4978 3.94632 12.2067 4.0187 11.9488 4.16689C11.6909 4.31507 11.4757 4.5336 11.3257 4.79952C11.1758 5.06543 11.0967 5.36892 11.0967 5.67811V9.50139C11.0967 9.81058 11.1758 10.1141 11.3257 10.38C11.4757 10.6459 11.6909 10.8644 11.9488 11.0126C12.2067 11.1608 12.4978 11.2332 12.7915 11.2221C13.0852 11.2111 13.3706 11.1171 13.6178 10.9499L16.4444 9.03769C16.675 8.88181 16.8647 8.6675 16.996 8.4144C17.1274 8.16131 17.1962 7.87755 17.1962 7.58918C17.1962 7.3008 17.1274 7.01704 16.996 6.76395C16.8647 6.51086 16.675 6.29654 16.4444 6.14067L13.6178 4.2296Z" fill="#159B80"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_51_599">
+                              <rect width="24" height="20" fill="white"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        {{ item.part }}
+                      قسمت
+                      </h3>
+                    </div>
 
+                  </div>
+                </ng-template>
+              }
+            </owl-carousel-o>
+          </div>
+          <div class="fanos-slide-footer">
+
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<div class="home-escape mt-3 p-3">
+<div class="home-escape  mt-3 py-5 p-3">
   <div class="container">
     <div class="row">
       <div class="col-4">
@@ -145,10 +192,26 @@
           </div>
         </div>
       </div>
+      <div class="col-8">
+        <div class="slide p-4">
+
+          <div class="slide-header d-flex justify-content-between align-items-center">
+
+          </div>
+          <div class="slide-body">
+
+
+          </div>
+          <div class="slide-footer">
+
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<div class="home-escape mt-3 p-3">
+<div class="home-escape  mt-3 py-5 p-3">
   <div class="container">
     <div class="row">
       <div class="col-4">
@@ -216,10 +279,26 @@
         </div>
 
       </div>
+      <div class="col-8">
+        <div class="slide p-4">
+
+          <div class="slide-header d-flex justify-content-between align-items-center">
+
+          </div>
+          <div class="slide-body">
+
+
+          </div>
+          <div class="slide-footer">
+
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<div class="home-escape mt-3 p-3">
+<div class="home-escape  mt-3 py-5 p-3">
   <div class="container">
     <div class="row">
       <div class="col-4">
@@ -335,6 +414,22 @@
 
         </div>
 
+      </div>
+      <div class="col-8">
+        <div class="slide p-4">
+
+          <div class="slide-header d-flex justify-content-between align-items-center">
+
+          </div>
+          <div class="slide-body">
+
+
+          </div>
+          <div class="slide-footer">
+
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
