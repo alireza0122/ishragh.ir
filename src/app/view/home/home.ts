@@ -21,6 +21,5 @@ import { HomeColleagues } from './home-colleagues/home-colleagues';
     HomeColleagues,
   ],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
 })
 export class Home {}

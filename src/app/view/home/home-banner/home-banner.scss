@@ -1,10 +1,20 @@
 
 .home-banner {
   background: linear-gradient(263.23deg, rgba(39, 189, 188, 0.14) 0%, rgba(249, 211, 37, 0.14) 100%);
-  height: 616px;
+  height: 100%;
   width: 100% !important;
   z-index: 1;
   position: absolute;
+}
+@media (min-width: 1040px) {
+  .home-banner {
+    background: linear-gradient(263.23deg, rgba(39, 189, 188, 0.14) 0%, rgba(249, 211, 37, 0.14) 100%);
+    height: 618px;
+    width: 100% !important;
+    z-index: 1;
+    position: absolute;
+  }
+
 }
 
 .home-banner-description {

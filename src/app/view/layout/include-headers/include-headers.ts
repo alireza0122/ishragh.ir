@@ -1,13 +1,10 @@
 import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-interface NavItem {
-  title: string;
-  href: string;
-  icon: string;
-}
 @Component({
   selector: 'app-include-headers',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './include-headers.html',
   styleUrl: './include-headers.scss',
 })
@@ -15,7 +12,7 @@ export class IncludeHeaders {
   isOpen = false;
   isScrolled = false;
 
-  navItems: NavItem[] = [
+  navItems = [
     { title: 'خانه', href: '/', icon: '/img/homeHover.svg' },
     { title: 'محصولات', href: '/', icon: '/img/shopping-bagHover.svg' },
     { title: 'شرکت‌ها', href: '/', icon: '/img/buildingsHover.svg' },

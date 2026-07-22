@@ -4,8 +4,8 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 type DataTypeFanos = {
   img: string;
   title: string;
-  user:string;
-  part:number;
+  user: string;
+  part: number;
 };
 type DataTypeKarizman = {
   img: string;
@@ -14,6 +14,36 @@ type DataTypeKarizman = {
   EndTime: string;
 };
 
+type DalItem = {
+  id: number;
+  title: string;
+  logo: string;
+  color: string;
+  type: string;
+  person: {
+    name: string;
+    position: string;
+    image: string;
+  };
+
+  activityLevel: string;
+
+  categories: string[];
+
+  number: string;
+  numberValue: string;
+
+  bgCategory: string;
+};
+
+
+type DataTypeSoog = {
+  img: string;
+  title: string;
+  melli: string;
+  melliNumber: number;
+  date:string
+};
 
 @Component({
   selector: 'app-home-escape',
@@ -143,7 +173,6 @@ export class HomeEscape {
       },
     },
   };
-
   karizmanData: DataTypeKarizman[] = [
     {
       img: '/img/mvBTmDqZ73gxnzboDmB5cQ9K2PCRHYmE5IGMcY36_.png',
@@ -192,6 +221,120 @@ export class HomeEscape {
       title: 'رویداد ایده پردازی سبک زندگی رضوی',
       StartTime: 'از 20 شهریور 1402',
       EndTime: ' تا 10 مهر 1402',
+    },
+  ];
+
+  daldata: DalItem[] = [
+    {
+      id: 1,
+      title: 'فیتشو',
+      logo: '/img/zpepVu0iBb921nMY9bH9PqiAl3rUk5SWgJudaxA7.jfif',
+
+      person: {
+        name: 'طاهره جعفرزاده',
+        position: 'مدیرعامل',
+        image: '/img/UL8EFy7mu5xvBGboSvnWvstLI70LESxIESi6qUl7.jfif',
+      },
+      type: 'تیم ایده',
+      activityLevel: 'سطح فعالیت',
+
+      categories: ['MP'],
+
+      number: '۱/۴',
+      color: '#f57f30',
+      bgCategory: '#F3E4D8',
+      numberValue: '1',
+    },
+    {
+      id: 2,
+      title: 'مدرسه کارآمد',
+      logo: '/img/VOO9HXQodiJHn5BToONnojEzRJVTlAIqImVZFSsM.jpg',
+
+      person: {
+        name: 'سید مهدی روحبخش',
+        position: 'مدیرعامل',
+        image: '/img/hU5FD7IeOFoiE1MNUfaJ5yYGm7oVo3VLJFa7RVpf.png',
+      },
+      type: 'تیم ایده',
+      activityLevel: 'سطح فعالیت',
+
+      categories: ['Ideas', 'BM'],
+
+      number: '۱/۴',
+      color: '#f57f30',
+      bgCategory: '#F3E4D8',
+      numberValue: '1',
+    },
+    {
+      id: 3,
+      title: 'آکادمی اسکرین شات',
+      logo: '/img/2xpeV5JhEdFUTHVRXryOUntblks63WSt92OOr2b1.png',
+
+      person: {
+        name: ' مصطفی حیدری',
+        position: 'مدیرعامل',
+        image: '/img/hU5FD7IeOFoiE1MNUfaJ5yYGm7oVo3VLJFa7RVpf.png',
+      },
+      type: 'تیم ایده',
+      activityLevel: 'سطح فعالیت',
+
+      categories: ['Ideas', 'BM'],
+
+      number: '2/۴',
+      color: '#c41321',
+      bgCategory: '#f9e7e8',
+      numberValue: '2',
+    },
+    {
+      id: 1,
+      title: 'کارنوج',
+      logo: '/img/1edqKAEaUpkIRYOFtUdBBZe8lslAeKyBKch8jFhI.png',
+
+      person: {
+        name: 'سید احمد رضوی‌نژاد',
+        position: 'مدیرعامل',
+        image: '/img/hU5FD7IeOFoiE1MNUfaJ5yYGm7oVo3VLJFa7RVpf.png',
+      },
+      type: 'تیم ایده',
+      activityLevel: 'سطح فعالیت',
+
+      categories: ['Ideas', 'BM'],
+
+      number: '3/۴',
+      color: '#c41321',
+      bgCategory: '#f9e7e8',
+      numberValue: '3',
+    },
+  ];
+
+  Soogdata: DataTypeSoog[] = [
+    {
+      img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
+      title: 'موسسه قرآنی تسنیم لنجان',
+      melli: 'شناسه ملی',
+      melliNumber: 10980211432,
+      date: ' 1401/03/27   15 آذرماه 1400 '
+    },
+    {
+      img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
+      title: 'موسسه قرآنی تسنیم لنجان',
+      melli: 'شناسه ملی',
+      melliNumber: 10980211432,
+      date: ' 1401/03/27   15 آذرماه 1400 '
+    },
+    {
+      img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
+      title: 'موسسه قرآنی تسنیم لنجان',
+      melli: 'شناسه ملی',
+      melliNumber: 10980211432,
+      date: ' 1401/03/27   15 آذرماه 1400 '
+    },
+    {
+      img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
+      title: 'موسسه قرآنی تسنیم لنجان',
+      melli: 'شناسه ملی',
+      melliNumber: 10980211432,
+      date: ' 1401/03/27   15 آذرماه 1400 '
     },
   ];
 }
