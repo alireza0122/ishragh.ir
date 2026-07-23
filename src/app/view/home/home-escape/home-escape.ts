@@ -65,6 +65,7 @@ export class HomeEscape {
     responsive: {
       0: {
         items: 1,
+        stagePadding: 30,
       },
       576: {
         items: 2,
@@ -156,8 +157,8 @@ export class HomeEscape {
 
     responsive: {
       0: {
-        items: 1,
-        stagePadding: 20,
+        items: 1 ,
+        stagePadding: 10,
       },
       576: {
         items: 2,

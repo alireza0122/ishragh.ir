@@ -1,8 +1,7 @@
 <div class="home-escape mt-3 py-5 p-3">
   <div class="container">
     <div class="row">
-
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <div class="home-escape-box d-flex justify-content-between align-items-center flex-column h-100">
           <img class="h-100" src="/img/fanos-logo-unlable (1).svg" alt="fanos-logo-unlable">
           <div>
@@ -130,10 +129,10 @@
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 mt-3 mt-lg-0">
         <div class="fanos-slide p-3 pb-1 ps-0">
           <div class="fanos-slide-header d-flex justify-content-between align-items-center">
-            <h3 class="fanos-slide-header-title fs-16px fw-900">
+            <h3 class="fanos-slide-header-title fs-lg-16px fs-14px fw-900 text-over o2">
               نیمکت؛ دوره‌ها و تک‌درس‌های صوتی و تصویری
             </h3>
             <button class="fanos-slide-header-btn">
@@ -144,7 +143,7 @@
             <owl-carousel-o [options]="customOptions">
               @for (item of Fanos; track $index) {
                 <ng-template carouselSlide>
-                  <div class="fanos-slide-body-item p-2 pb-1">
+                  <div class="fanos-slide-body-item p-2  pb-1 ">
                     <div class="fanos-slide-body-item-img">
                       <img class="fanos-slide-body-item-img " [src]="item.img" [alt]="item.title">
                     </div>
@@ -187,7 +186,7 @@
 <div class="home-escape mt-3 py-4 p-3">
   <div class="container">
     <div class="row ">
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <div class="home-escape-box d-flex justify-content-between align-items-center flex-column h-100 ">
           <img class="h-100" src="/img/karizman-logo-new1.svg" alt="fanos-logo-unlable">
           <div>
@@ -210,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 mt-3 mt-lg-0">
         <div class="karizman-slide p-3 pb-0 ps-0">
           <div class="karizman-slide-header d-flex justify-content-between align-items-center">
             <h3 class="karizman-slide-header-title fs-16px fw-900">
@@ -226,7 +225,7 @@
                 <ng-template carouselSlide class="">
                   <div class="karizman-slide-body-item p-3 ">
                     <div class="karizman-slide-img">
-                      <div class="karizman-slide-body-item-img">
+                      <div class="karizman-slide-body-item-img position-sm-absolute position-relative">
                         <img class="karizman-slide-body-item-img-bg" [src]="item.img" [alt]="item.title">
 
                         <img class="karizman-slide-body-item-img-main" [src]="item.img" [alt]="item.title">
@@ -235,13 +234,13 @@
                     </div>
 
 
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-end pt-4 mt-5 pt-sm-0 mt-sm-0 ">
                       <h1 class="karizman-slide-body-item-title w-50 fs-16px fw-900 text-over o1">{{ item.title }}</h1>
                     </div>
-                    <div class="borderc py-4 pt-5 ">
+                    <div class="borderc py-sm-4 pt-sm-5 ">
 
                     </div>
-                    <div class=" mt-3 p-2 karizman-slide-body-item-box d-flex justify-content-between">
+                    <div class=" mt-3 p-2 karizman-slide-body-item-box d-flex flex-column flex-sm-row  justify-content-center justify-content-sm-between">
                       <h3
                         class="karizman-slide-body-item-box-StartTime fs-14px  text-justify text-over o2 fs-14px m-0 ">{{ item.StartTime }}</h3>
                       <h3
@@ -261,7 +260,7 @@
 <div class="home-escape mt-3 py-5 p-3">
   <div class="container">
     <div class="row ">
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <div class="home-escape-box d-flex justify-content-between align-items-center flex-column h-100 ">
           <img class="h-100" src="/img/3dal-logo-unlabel (3).svg" alt="f-logo-unlable">
           <div>
@@ -318,10 +317,10 @@
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 mt-3 mt-lg-0">
         <div class="dal-slide p-3 pb-0 ps-0">
-          <div class="dal-slide-header d-flex justify-content-between align-items-center">
-            <div class="d-flex gap-3 align-items-center">
+          <div class="dal-slide-header d-flex justify-content-between align-items-baseline align-items-lg-center">
+            <div class="d-flex flex-column flex-sm-row gap-3 align-lg-items-center">
               <svg class="fanoos-mh-3" style="margin-left: 10px" xmlns="http://www.w3.org/2000/svg" width="30"
                    height="32" viewBox="0 0 30 32" fill="none">
                 <g clip-path="url(#clip0_761_289)">
@@ -348,7 +347,7 @@
                   </clipPath>
                 </defs>
               </svg>
-              <h3 class="dal-slide-header-title fs-16px fw-900">
+              <h3 class="dal-slide-header-title fs-lg-16px fs-14px fw-900">
                 تیم های پذیرفته شده
               </h3>
             </div>
@@ -384,7 +383,7 @@
                       </div>
 
                       <div class="me-2 w-100 ">
-                        <div class="d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
 
                           <div class="dal-slide-img">
                             <div class="dal-slide-body-item-img ">
@@ -443,10 +442,10 @@
     </div>
   </div>
 </div>
-<div class="home-escape  mt-3 py-5 p-3">
+<div class="home-escape mt-3 py-5 p-3">
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <div class="d-flex justify-content-between align-items-center flex-column h-100 ">
           <img class="h-100" src="/img/4sogh-logo-unlabel.svg" alt="fanos-logo-unlable">
           <div>
@@ -555,7 +554,7 @@
         </div>
 
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 mt-3 mt-lg-0">
         <div class="soog-slide p-3 pb-0 ps-0">
           <div class="soog-slide-header d-flex justify-content-between align-items-center">
             <h3 class="soog-slide-header-title fs-16px fw-900">

@@ -89,8 +89,8 @@
       }
 
       &-btn {
-        font-size: 14px;
-        display: flex;
+        text-overflow: ellipsis !important;
+        //display: flex;
         justify-content: center;
         color: white;
         border: none;

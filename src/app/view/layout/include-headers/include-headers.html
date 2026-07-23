@@ -4,30 +4,31 @@
       <div class="row align-items-center">
         <div class="col-9 col-lg-9">
           <ul class="d-flex p-0 m-0 align-items-center gap-2 gap-lg-0">
-            <li class="hamburger-toggle d-lg-none" (click)="toggleMenu()" [class.active]="isOpen">
+            <li class="hamburger-toggle d-xl-none" (click)="toggleMenu()" [class.active]="isOpen">
               <span></span>
               <span></span>
               <span></span>
             </li>
-            <li class="d-block d-lg-none">
+            <li class="d-block d-xl-none">
               <img  class="img-header w-100" src="/img/navicon.svg" alt="navicon">
             </li>
-            <li class="mx-3 d-block d-lg-none">
+            <li class="mx-3 d-block d-xl-none">
               <img class="w-100" src="/img/navbrand.svg" alt="navbrand">
             </li>
 
-            <li class="d-none d-lg-block">
+            <li class="d-none d-xl-block">
               <img class="img-header" src="/img/navicon.svg" alt="navicon">
             </li>
-            <li class="mx-3 d-none d-lg-block">
+            <li class="mx-3 d-none d-xl-block">
               <img src="/img/navbrand.svg" alt="navbrand">
             </li>
 
             <!-- منوی دسکتاپ -->
-            <li class="d-none d-lg-block" *ngFor="let item of navItems">
+            <li class="d-none d-xl-block" *ngFor="let item of navItems">
               <a [href]="item.href" class="nav-link">
                 {{ item.title }}
               </a>
+
             </li>
           </ul>
         </div>
@@ -64,7 +65,7 @@
     <div class="mobile-backdrop" [class.show]="isOpen" (click)="closeMenu()"></div>
 
     <!-- منوی موبایل (کشویی) -->
-    <div class="mobile-menu px-2 d-lg-none" [class.open]="isOpen">
+    <div class="mobile-menu px-2 d-xl-none" [class.open]="isOpen">
       <ul class="p-0 m-0">
         <li class="mb-3 d-flex justify-content-around my-3 ">
           <img class="img-header" src="/img/navicon.svg" alt="navicon">

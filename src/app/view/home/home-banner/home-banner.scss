@@ -6,16 +6,16 @@
   z-index: 1;
   position: absolute;
 }
-@media (min-width: 1040px) {
-  .home-banner {
-    background: linear-gradient(263.23deg, rgba(39, 189, 188, 0.14) 0%, rgba(249, 211, 37, 0.14) 100%);
-    height: 618px;
-    width: 100% !important;
-    z-index: 1;
-    position: absolute;
-  }
-
-}
+//@media (min-width: 1040px) {
+//  .home-banner {
+//    background: linear-gradient(263.23deg, rgba(39, 189, 188, 0.14) 0%, rgba(249, 211, 37, 0.14) 100%);
+//    height: 618px;
+//    width: 100% !important;
+//    z-index: 1;
+//    position: absolute;
+//  }
+//
+//}
 
 .home-banner-description {
   line-height: 28px;
@@ -94,7 +94,7 @@
   }
 
   &-video {
-
+    background-color: transparent;
     border: none;
     font-weight: bold;
     color: #373F47;
@@ -124,4 +124,15 @@
 .textT {
   transition: all 1s !important;
   //padding: 0 8px;
+}
+
+@media (max-width: 425px) {
+  .logo-mobile{
+    width: 255px !important;
+    z-index: 5 !important;
+  }
+}
+.logo-text{
+  width: 100%;
+  z-index: 5 !important;
 }
