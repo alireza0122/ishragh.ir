@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 mt-5 d-flex justify-content-center">
+      <div class="shared-box">
+        <h3 class="p-0 m-0 shared-box-title fw-bold fs-lg-32px  fs-22px">
+          معرفی نسخه ها
+        </h3>
+        <div class="dd"></div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        @for (item of version; track item.id) {
+          <div class="col-3">
+            <div class="version-item p-3">
+              <div class="version-item-title">
+                <p class="fs-18px m-0"> {{ item.title }}</p>
+              </div>
+
+              <div class="version-item-box">
+                @for (
+                  feature of item.features;
+                  track feature.title
+                  ) {
+
+                  <div class="version-item-feature">
+
+                      <span class="feature-title">
+                        {{ feature.title }}
+                      </span>
+
+                    @if (feature.available) {
+
+                      <span class="feature-icon available">
+                          ✓
+                        </span>
+
+                    } @else {
+
+                      <span class="feature-icon unavailable">
+                          ×
+                        </span>
+
+                    }
+
+                  </div>
+
+                }
+                <div class="version-item-box-btn d-flex justify-content-between">
+                  <div class="">
+                    <button class="">6 ماه</button>
+                    <p>پشتیبانی رایگان</p>
+                  </div>
+                  <div class="">
+                    <button class="">2 گیگابایت</button>
+                    <p>فضای بارگذاری</p>
+                  </div>
+                </div>
+                <div class="version-item-box-price">
+
+                </div>
+                <div class="version-item-box-bottom">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        }
+
+        <div class="col-3">
+
+        </div>
+        <div class="col-3">
+
+        </div>
+        <div class="col-3">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
