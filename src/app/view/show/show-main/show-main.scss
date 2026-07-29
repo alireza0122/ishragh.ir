@@ -1,0 +1,43 @@
+.text{
+  color: #373F47;
+
+}
+.lineH{
+  line-height: 1.5rem;
+}
+.btnM{
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #ECB365;
+  background: rgba(236, 179, 101, 0.1);
+  border-radius: 8px;
+  border: none ;
+
+}
+.shared-box {
+  font-weight: bold;
+  font-size: 32px;
+  color: #4e4e4e;
+  position: relative;
+  cursor: pointer !important;
+  &:hover {
+    color: black;
+  }
+  &:hover .dd{
+    width: 100%;
+    border-radius: 16px;
+    cursor: pointer !important;
+    right: 0;
+  }
+}
+.dd{
+  position: absolute;
+  background-color: #ebb26c;
+  width: 100px;
+  height: 6px;
+  right: 50px;
+}
+.line-shape {
+  width: 50%;
+  height: auto;
+}

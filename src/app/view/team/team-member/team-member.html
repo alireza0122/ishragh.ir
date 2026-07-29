@@ -1,0 +1,81 @@
+<div class="container mt-3">
+  <div class="row">
+    @for (item of daldata; track $index) {
+      <div class="col-4 mt-4">
+        <div class="dal-slide-body-item p-2  " [style.color]="item.color">
+          <div class="d-flex w-100 ">
+
+            <div class=" d-flex flex-column align-items-center ">
+              <div class="mb-2 bg-box p-2" [style.background-color]="item.color">
+                <p
+                  class="m-0 text-white bg-box-text p-1"
+                  [style.--progress]="item.numberValue">
+                  {{ item.number }}
+                </p>
+              </div>
+              <div class="h-100 dal-slide-body-item-Category justify-content-center"
+                   [style.background-color]="item.bgCategory">
+
+                <h3
+                  class="dal-slide-body-item-Category-text  d-flex   fs-14px m-0 ">{{ item.type }}</h3>
+              </div>
+            </div>
+
+            <div class="me-2 w-100 ">
+              <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
+
+                <div class="dal-slide-img">
+                  <div class="dal-slide-body-item-img ">
+
+                    <img class="dal-slide-body-item-img" [src]="item.logo" [alt]="item.title">
+                  </div>
+                </div>
+                <div class="dal-slide-body-item-person d-flex flex-column  ">
+                  <h1
+                    class="dal-slide-body-item-person-title  fs-16px fw-900 text-over o1 fs-16px">{{ item.title }}</h1>
+                  <div class="d-flex gap-3 align-items-center">
+                    <img class="dal-slide-body-item-person-img" [src]="item.person.image" [alt]="item.title">
+                    <div class="">
+                      <p class="text-color m-0 fs-12px">
+                        {{ item.person.position }}
+                      </p>
+                      <p class="text-black m-0 fs-14px">
+                        {{ item.person.name }}
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="mt-3 me-2">
+                <p class="fs-12px text-color mb-1">{{ item.activityLevel }}</p>
+                <div class="d-flex gap-3 ">
+                  @for (category of item.categories; track $index) {
+                    <div
+                      class="category-box m-0 text-black "
+                      [style.--category-color]="item.color">
+                      <p class="m-0 fs-12px">
+                        {{ category }}
+                      </p>
+                    </div>
+                  }
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    }
+    <div class="col-12 mt-2">
+      <div class="d-flex justify-content-center">
+        <button class="btnA p-2 ">
+          نمایش بیشتر
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

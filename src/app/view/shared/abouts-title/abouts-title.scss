@@ -1,0 +1,27 @@
+.shared-box {
+  font-weight: bold;
+  font-size: 32px;
+  color: #1a1b27;
+  position: relative;
+  cursor: pointer !important;
+
+  &:hover .dd{
+    width: 100%;
+    border-radius: 16px;
+    cursor: pointer !important;
+    right: 0;
+    height: 13px;
+    transition: 0.5s all;
+  }
+}
+.dd{
+  position: absolute;
+  background-color: #F9D325;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  right: -10px;
+  top: 50%;
+  z-index: -1;
+
+}
