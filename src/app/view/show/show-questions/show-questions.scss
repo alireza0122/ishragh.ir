@@ -1,0 +1,104 @@
+.shared-box {
+  font-weight: bold;
+  font-size: 32px;
+  color: #4e4e4e;
+  position: relative;
+  cursor: pointer !important;
+
+  &:hover {
+    color: black;
+  }
+
+  &:hover .dd {
+    width: 100%;
+    border-radius: 16px;
+    cursor: pointer !important;
+    right: 0;
+  }
+}
+
+.dd {
+  position: absolute;
+  background-color: #ebb26c;
+  width: 100px;
+  height: 6px;
+  right: 0;
+}
+.show-questions-btn{
+  background-color: transparent;
+  border: none;
+  transition: 2s all !important;
+
+  & button{
+
+  }
+
+  &-dec{
+    background-color: #fdf7f0;
+    border-radius: 15px;
+    & p{
+    }
+  }
+}
+.fa-angle-down {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s all;
+}
+.min-h{
+  min-height: 150px;
+  transition: 1s all;
+}
+.open{
+  transition: 1s all !important;
+}
+
+.img-box{
+  &-1{
+    transform: rotate(4.11276deg) ;
+  }
+  &-2 {
+    transform: rotate(4.11276deg);
+  }
+ &-3 {
+    transform: rotate(4.11276deg);
+  }
+
+
+  &:hover &-2{
+    transform: rotate(0deg);
+  }
+ &:hover &-1{
+   transform: rotate(0deg);
+ }&:hover &-3{
+   transform: rotate(0deg);
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

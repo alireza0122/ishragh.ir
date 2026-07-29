@@ -6,6 +6,7 @@ type DataType = {
   title: string;
   price: number;
   currency: string;
+  color: string;
   support: {
     duration: number;
     unit: string;
@@ -104,6 +105,7 @@ export class ShowVersion {
       button: {
         text: 'خرید',
       },
+      color: '#215ac9',
     },
     {
       id: 'bronze',
@@ -111,7 +113,7 @@ export class ShowVersion {
       price: 30000000,
       currency: 'تومان',
       support: {
-        duration: 6,
+        duration: 12,
         unit: 'ماه',
         label: 'پشتیبانی رایگان',
       },
@@ -177,6 +179,8 @@ export class ShowVersion {
       button: {
         text: 'خرید',
       },
+
+      color: '#c3704e',
     },
     {
       id: 'silver',
@@ -250,6 +254,7 @@ export class ShowVersion {
       button: {
         text: 'خرید',
       },
+      color: '#9095a1',
     },
     {
       id: 'gold',
@@ -323,6 +328,7 @@ export class ShowVersion {
       button: {
         text: 'خرید',
       },
+      color: '#e27e2c',
     },
   ];
 }

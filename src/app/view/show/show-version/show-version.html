@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-12 mt-5 d-flex justify-content-center">
+    <div class="col-12 mt-5 mb-3  d-flex justify-content-center">
       <div class="shared-box">
         <h3 class="p-0 m-0 shared-box-title fw-bold fs-lg-32px  fs-22px">
           معرفی نسخه ها
@@ -9,59 +9,68 @@
         <div class="dd"></div>
       </div>
     </div>
-    <div class="col-12">
+    <div class="col-12 mt-5">
       <div class="row">
         @for (item of version; track item.id) {
           <div class="col-3">
-            <div class="version-item p-3">
-              <div class="version-item-title">
-                <p class="fs-18px m-0"> {{ item.title }}</p>
+            <div class="version-item p-2  ">
+              <div class="version-item-title" [style.background-color]="item.color">
+                <p class="fs-18px m-0 fs-18px"> {{ item.title }}</p>
               </div>
 
-              <div class="version-item-box">
-                @for (
-                  feature of item.features;
-                  track feature.title
-                  ) {
+              <div class="version-item-box mt-3">
+                @for (feature of item.features;
+                  track feature.title) {
 
-                  <div class="version-item-feature">
-
-                      <span class="feature-title">
-                        {{ feature.title }}
-                      </span>
+                  <div class="version-item-feature py-1">
 
                     @if (feature.available) {
 
-                      <span class="feature-icon available">
-                          ✓
-                        </span>
+                      <img class="ps-2" src="/img/Group12888.svg" alt="Group12888.svg">
+
 
                     } @else {
 
-                      <span class="feature-icon unavailable">
-                          ×
-                        </span>
 
+                      <img class="ps-2" src="/img/Group199571.svg" alt="Group12888.svg">
                     }
+
+                    <span class="version-item-feature-title fs-14px">
+                        {{ feature.title }}
+                      </span>
+
 
                   </div>
 
                 }
-                <div class="version-item-box-btn d-flex justify-content-between">
-                  <div class="">
-                    <button class="">6 ماه</button>
-                    <p>پشتیبانی رایگان</p>
+                <div class="version-item-box-btn d-flex justify-content-between gap-3 mt-3">
+                  <div class="version-item-box-btn-sec">
+                    <button class="fs-16px">
+                      {{ item.support.duration }}
+                      {{ item.support.unit }}
+                    </button>
+                    <p class="m-0 fs-14px text-color">{{ item.support.label }}</p>
                   </div>
-                  <div class="">
-                    <button class="">2 گیگابایت</button>
-                    <p>فضای بارگذاری</p>
+                  <div class="version-item-box-btn-sec">
+                    <button class="fs-16px ">
+                      {{ item.storage.amount }}
+                      {{ item.storage.unit }}
+                    </button>
+                    <p class="m-0 fs-14px text-color">
+                      {{ item.storage.label }}
+                    </p>
                   </div>
                 </div>
-                <div class="version-item-box-price">
-
+                <div class="version-item-box-price d-flex justify-content-center gap-3 mt-4 align-items-center">
+                  <p class="fs-32px m-0 fw-bold">
+                    {{ item.price }}
+                  </p>
+                  <img src="/img/toman.svg" alt="toman">
                 </div>
                 <div class="version-item-box-bottom">
-
+                  <button class="version-item-box-bottom-btn fs-18px fw-bold py-2">
+                    {{ item.button.text }}
+                  </button>
                 </div>
               </div>
 
@@ -69,16 +78,23 @@
           </div>
         }
 
-        <div class="col-3">
 
-        </div>
-        <div class="col-3">
-
-        </div>
-        <div class="col-3">
-
-        </div>
       </div>
+    </div>
+    <div class="col-12">
+      <ul class="mt-3">
+        <li class="list-style ps-2">
+          <a class="fw-bold text fs-16px" href="/show">
+            برای شخصی‌سازی طراحی صفحات و دریافت نسخه‌ای اختصاصی‌تر با ما تماس بگیرید.
+          </a>
+        </li>
+        <li class="list-style ps-2 mt-1">
+          <a class="fw-bold text fs-16px" href="/show">
+            امکان افزایش زمان پشتیبانی و افزایش فضای بارگذاری طبق قراردادی جداگانه وجود دارد.
+          </a>
+        </li>
+
+      </ul>
     </div>
   </div>
 </div>
