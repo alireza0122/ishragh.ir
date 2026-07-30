@@ -17,7 +17,7 @@ ddx {
   background-color: #f7f7f7;
   border-radius: 15px;
 
-  min-height: 250px;
+  min-height: 400px;
 
   &-ul {
     &-list {
@@ -93,4 +93,86 @@ ddx {
   max-height: 300px;
   opacity: 1;
   padding-top: 10px;
+}
+.sidebar-menu{
+  position: sticky;
+  top: 20%;
+}
+#Introduction,
+#Arena,
+#Services,
+#Seminary {
+  scroll-margin-top: 100px;
+}
+
+
+.abouts-main-li.active > a {
+  color: #be8e25;
+  font-weight: bold;
+  border-bottom: 2px solid #be8e25;
+}
+.shared-box {
+  &:hover{
+    background-color: rgba(172, 197, 221, 0.13);
+  }
+  font-weight: bold;
+  font-size: 32px;
+  position: relative;
+  cursor: pointer !important;
+  background: #FFFFFF;
+  border: 1px solid #D3D3D3;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  &:hover .dd{
+    width: 100%;
+    border-radius: 16px;
+    cursor: pointer !important;
+
+  }
+}
+.dd{
+  position: absolute;
+  background-color: #F9D325;
+  width: 0;
+  height: 6px;
+  right: 1px;
+  bottom: 0 ;
+}
+.number{
+  border-radius: 15px;
+  color: white;
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+}
+.Seminary-icon{
+  width: 50px;
+  height: 50px;
+}
+.bordd{
+  background-color: #642a98;
+  width: 2px;
+  height: 20px;
+  right: 13%;
+}
+
+.shared-box:hover .bordd{
+  height: 30px;
+  width: 3px;
+  border-radius: 99999px;
+
+}
+
+.Pillars-box{
+  height: 147px;
+  background: linear-gradient(90deg, #F0F0F7 0%, rgba(240, 240, 247, 0) 100%);
+  border-radius: 24px 0px 0px 24px;
+}
+.Pillars-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #373F47;
 }

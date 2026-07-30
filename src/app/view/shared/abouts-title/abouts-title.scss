@@ -12,7 +12,11 @@
     right: 0;
     height: 13px;
     transition: 0.5s all;
+
   }
+}
+.shared-box:hover .shared-box-title{
+  color: #195675 !important;
 }
 .dd{
   position: absolute;
