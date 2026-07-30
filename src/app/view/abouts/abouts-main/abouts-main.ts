@@ -27,7 +27,7 @@ export class AboutsMain {
 
   @HostListener('window:scroll')
   onScroll() {
-    const ids = ['Introduction', 'Arena', 'Services', 'Seminary', 'Pillars'];
+    const ids = ['Introduction', 'Arena', 'Services', 'Seminary', 'Pillars', 'Contact', 'Agencies'];
     for (const id of ids.reverse()) {
       const el = document.getElementById(id);
       if (el && window.scrollY >= el.offsetTop - 100) {
