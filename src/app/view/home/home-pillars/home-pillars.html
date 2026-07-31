@@ -3,8 +3,8 @@
     <div class="row align-items-center">
       <div class="col-lg-6  col-12 order-1 order-lg-0">
         <div class="home-pillars-item  ">
-          <div class="home-pillars-item-img mb-3 d-flex justify-content-between align-items-center  ">
-            <div class="d-flex flex-column flex-sm-row gap-3">
+          <div class="home-pillars-item-img  d-flex justify-content-between align-items-center mb-4 me-2   ">
+            <div class="d-flex  gap-3 mb-4">
               <div class="home-pillars-item-img-top content"
                    [style]="{
                      '--after-bg-color': currentItem().color
@@ -13,30 +13,34 @@
               >
 
                 <img class="" [src]=" currentItem().img" alt="fanos-logo-unlable">
-                <img class="content-img" src="/img/loader7 (1).svg" alt="fddddddddd">
+                <img class="content-img " src="/img/loader7 (1).svg" alt="fddddddddd">
 
               </div>
 
-              <div class="home-pillars-item-img-icon flex-column justify-content-center">
-                <img [src]="currentItem().imgiconA" alt="description">
-                <img [src]="currentItem().imgiconB" alt="description">
+                <div class="home-pillars-item-img-icon align-items-start flex-column justify-content-center">
+                <img class="w-img" [src]="currentItem().imgiconA" alt="description">
+                <img class="w-img" [src]="currentItem().imgiconB" alt="description">
               </div>
             </div>
 
             <div class="home-pillars-item-img-flsh">
-              <i class="fa-solid fa-chevron-up home-pillars-item-img-flsh-up"
-                 (click)="goNext()"
-              ></i>
-              <i class="fa-solid fa-chevron-down home-pillars-item-img-flsh-down"
-                 (click)="goPrevious()"
-              ></i>
+              <div class="home-pillars-item-img-flsh-down" (click)="goNext()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="margin: auto;cursor: pointer">
+                  <path d="M11.29 10.6C11.383 10.5062 11.4936 10.4319 11.6154 10.3811C11.7373 10.3303 11.868 10.3042 12 10.3042C12.132 10.3042 12.2627 10.3303 12.3846 10.3811C12.5064 10.4319 12.617 10.5062 12.71 10.6L17.29 15.19C17.383 15.2837 17.4936 15.3581 17.6154 15.4089C17.7373 15.4596 17.868 15.4858 18 15.4858C18.132 15.4858 18.2627 15.4596 18.3846 15.4089C18.5064 15.3581 18.617 15.2837 18.71 15.19C18.8963 15.0026 19.0008 14.7492 19.0008 14.485C19.0008 14.2208 18.8963 13.9673 18.71 13.78L14.12 9.18998C13.5575 8.62818 12.795 8.31262 12 8.31262C11.205 8.31262 10.4425 8.62818 9.88 9.18998L5.28999 13.78C5.10525 13.9662 5.0011 14.2176 4.99999 14.48C4.99923 14.6116 5.02446 14.742 5.07422 14.8639C5.12398 14.9857 5.19731 15.0965 5.28999 15.19C5.38296 15.2837 5.49356 15.3581 5.61542 15.4089C5.73727 15.4596 5.86798 15.4858 5.99999 15.4858C6.132 15.4858 6.26271 15.4596 6.38457 15.4089C6.50643 15.3581 6.61703 15.2837 6.70999 15.19L11.29 10.6Z" fill="#373F47"></path>
+                </svg>
+              </div>
+              <div class="home-pillars-item-img-flsh-down"  (click)="goPrevious()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="margin: auto;cursor: pointer">
+                  <path d="M12.71 13.4C12.617 13.4938 12.5064 13.5681 12.3846 13.6189C12.2627 13.6697 12.132 13.6958 12 13.6958C11.868 13.6958 11.7373 13.6697 11.6154 13.6189C11.4936 13.5681 11.383 13.4938 11.29 13.4L6.71 8.81003C6.61704 8.7163 6.50644 8.64191 6.38458 8.59114C6.26272 8.54037 6.13201 8.51423 6 8.51423C5.86799 8.51423 5.73728 8.54037 5.61542 8.59114C5.49356 8.64191 5.38296 8.7163 5.29 8.81003C5.10375 8.99739 4.99921 9.25085 4.99921 9.51503C4.99921 9.77922 5.10375 10.0327 5.29 10.22L9.88 14.81C10.4425 15.3718 11.205 15.6874 12 15.6874C12.795 15.6874 13.5575 15.3718 14.12 14.81L18.71 10.22C18.8948 10.0338 18.9989 9.78237 19 9.52003C19.0008 9.38842 18.9755 9.25796 18.9258 9.13612C18.876 9.01429 18.8027 8.90347 18.71 8.81003C18.617 8.7163 18.5064 8.64191 18.3846 8.59114C18.2627 8.54037 18.132 8.51423 18 8.51423C17.868 8.51423 17.7373 8.54037 17.6154 8.59114C17.4936 8.64191 17.383 8.7163 17.29 8.81003L12.71 13.4Z" fill="#373F47"></path>
+                </svg>
+              </div>
             </div>
 
           </div>
           <div class="home-pillars-item-box">
             <div class="home-pillars-item-box-description">
 
-              <p class="text-justify text-over text-l o3" [class.opacity-0]="isAnimating()">
+              <p class="text-justify text-over text-l m-0" [class.opacity-0]="isAnimating()">
                 {{ currentItem().description }}
               </p>
 
@@ -62,9 +66,9 @@
 
         </div>
       </div>
-      <div class="col-lg-6  col-12 order-0 order-lg-1 my-lg-5 py-lg-0 my-lg-0 d-flex justify-content-center p-5   ">
+      <div class="col-lg-6  col-12 order-0 order-lg-1 my-lg-5 py-lg-0 my-lg-0 d-flex justify-content-center mt-3 py-5 px-5 py-lg-0 px-lg-0    ">
 
-        <div class="circle-wrapper">
+        <div class="circle-wrapper mb-5 ">
 
 
           <div class="circle-main ">
@@ -73,29 +77,33 @@
 
 
           <div class="orbit orbit-1 ">
-            <div class="orbit-item-1 top d-flex justify-content-center">
-              <img class="w-50" src="/img/3dal-logo.svg" alt="">
+            <div class="orbit-item-1 top d-flex justify-content-center ">
+              <a (click)="selectItem(0)">
+                <img class="img" src="/img/3dal-logo.svg" alt="">
+              </a>
             </div>
-            <div class="orbit-item-1 bottom d-flex justify-content-center">
-              <img class="w-50" src="/img/4sogh-logo.svg" alt="">
+            <div class="orbit-item-1 bottom d-flex justify-content-center ">
+              <a  (click)="selectItem(1)">
+                <img class="img" src="/img/4sogh-logo.svg" alt="">
+              </a>
             </div>
           </div>
 
 
           <div class="orbit orbit-2 ">
             <div class="orbit-item-2 top d-flex justify-content-center">
-              <img class="w-50" src="/img/kariz-logo.svg" alt="">
+              <a (click)="selectItem(2)">
+                <img class="img" src="/img/kariz-logo.svg" alt="">
+              </a>
             </div>
 
             <div class="orbit-item-2 bottom d-flex justify-content-center">
-              <img class="w-50" src="/img/fanoos-logo.svg" alt="">
+              <a (click)="selectItem(3)">
+                <img class="img" src="/img/fanoos-logo.svg" alt="">
+              </a>
             </div>
-
           </div>
-
         </div>
-
-
       </div>
     </div>
   </div>

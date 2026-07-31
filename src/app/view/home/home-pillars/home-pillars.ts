@@ -94,6 +94,16 @@
       }, 1000);
     }
 
+    selectItem(index: number): void {
+      if (this.currentIndex() === index || this.isAnimating()) return;
+
+      this.isAnimating.set(true);
+
+      setTimeout(() => {
+        this.currentIndex.set(index);
+        this.isAnimating.set(false);
+      }, 1000);
+    }
 
   }
 
