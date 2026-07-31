@@ -18,9 +18,8 @@
     z-index: 1 !important;
     &-title {
       color: #18A1A1;
-      line-height: 48px;
+      //line-height: 48px;
       font-weight: bold;
-      font-size: 32px;
       cursor: pointer !important;
       position: relative;
       //display: inline-block;
@@ -30,7 +29,7 @@
         position: absolute;
         bottom: 0;
         right:  0;
-        width: 60px; // عرض دلخواه خط
+        width: 60px;
         height: 6px;
         background-color: #F9D325;
       }
