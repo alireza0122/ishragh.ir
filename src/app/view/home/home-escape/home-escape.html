@@ -1,5 +1,5 @@
-<div class="home-escape mt-3 py-5 p-3">
-  <div class="container">
+<div class="home-escape mt-lg-3 mt-0  pt-3  ">
+  <div class="container-fluid container-lg">
     <div class="row">
       <div class="col-12 col-lg-4">
         <div class="home-escape-box d-flex justify-content-between align-items-center flex-column h-100">
@@ -49,9 +49,9 @@
                 fill="#159B80"></path>
             </svg>
           </div>
-          <p class="fs-16px text-color my-2">تأمین محتوا و توسعه توان در حوزه صنایع خلاق</p>
+          <p class="fs-16px text-color my-3 text-center" >تأمین محتوا و توسعه توان در حوزه صنایع خلاق</p>
           <div class="">
-            <button class="fs-18px home-escape-box-btn ">
+            <button class="fs-17px home-escape-box-btn  ">
               ورود به فانوس
             </button>
             <svg class="hvr-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -62,7 +62,7 @@
             </svg>
           </div>
 
-          <div class="d-flex justify-content-between gap-4 ">
+          <div class="d-flex justify-content-between gap-2 ">
             <div class="text-center">
               <div class="home-escape-box-icon mt-3">
                 <div class="home-escape-box-icon-nimkat p-2">
@@ -129,13 +129,13 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-8 mt-3 mt-lg-0">
-        <div class="fanos-slide p-3 pb-1 ps-0">
-          <div class="fanos-slide-header d-flex justify-content-between align-items-center">
-            <h3 class="fanos-slide-header-title fs-lg-16px fs-14px fw-900 text-over o2">
+      <div class="col-12 col-lg-8 mt-3 mt-lg-0 p-0   ">
+        <div class="fanos-slide p-3 pb-1 ps-0 mt-3">
+          <div class="fanos-slide-header d-flex justify-content-between align-items-center mx-2">
+            <h3 class="fanos-slide-header-title fs-16px  fw-900 text-over o2">
               نیمکت؛ دوره‌ها و تک‌درس‌های صوتی و تصویری
             </h3>
-            <button class="fanos-slide-header-btn">
+            <button class="fanos-slide-header-btn d-lg-block d-none">
               434 درس
             </button>
           </div>
@@ -144,14 +144,19 @@
               @for (item of Fanos; track $index) {
                 <ng-template carouselSlide>
                   <div class="fanos-slide-body-item p-2  pb-1 ">
-                    <div class="fanos-slide-body-item-img">
+                    <div class="fanos-slide-body-item-img ">
                       <img class="fanos-slide-body-item-img " [src]="item.img" [alt]="item.title">
                     </div>
-                    <div class="py-2 ">
+                    <div class="py-2  ">
                       <h1 class="fanos-slide-body-item-title fs-16px fw-900 text-over o1">{{ item.title }}</h1>
-                      <h3
-                        class="fanos-slide-body-item-user fs-16px  text-justify text-over o2 fs-14px text-color">{{ item.user }}</h3>
-                      <h3 class="fanos-slide-body-item-part fs-16px  text-justify text-over o2 fs-14px color fw-bold">
+                      <div class="d-flex gap-2 mt-4">
+                        <img class="fanos-slide-body-item-user-img " [src]="item.imgUser" [alt]="item.imgUser">
+
+                        <h3
+                          class="fanos-slide-body-item-user fs-16px  text-justify text-over o2 fs-14px text-color">{{ item.user }}</h3>
+                      </div>
+
+                      <h3 class="fanos-slide-body-item-part fs-16px  text-justify text-over o2 fs-14px color fw-bold  ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
                           <g clip-path="url(#clip0_51_599)">
                             <path fill-rule="evenodd" clip-rule="evenodd"

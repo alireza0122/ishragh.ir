@@ -5,6 +5,7 @@ type DataTypeFanos = {
   img: string;
   title: string;
   user: string;
+  imgUser: string;
   part: number;
 };
 type DataTypeKarizman = {
@@ -36,13 +37,12 @@ type DalItem = {
   bgCategory: string;
 };
 
-
 type DataTypeSoog = {
   img: string;
   title: string;
   melli: string;
   melliNumber: number;
-  date:string
+  date: string;
 };
 
 @Component({
@@ -87,60 +87,70 @@ export class HomeEscape {
       title: 'طراحی استارت‌آپ فرهنگی',
       part: 11,
       user: 'دکتر باباخان',
+      imgUser: '/img/ntZTy5JI0diYAKXMfdZN0kymR0ZOTcnoHuoY1FuE (1).png',
     },
     {
       img: '/img/WEP3KM4kORJUZpuYN3duP2HVygeUvKltvAZSckE8.jpg',
       title: 'صنایع خلاق پیشران',
       part: 16,
       user: 'استاد محمد قطبی',
+      imgUser: '/img/oynVhQFXfHQFt9pQw9EJvQNRzePuoybXy0R76VXx.jpg',
     },
     {
       img: '/img/lbcNxoA8wTsckHYDxJprdtqw8rTxeFsoNvrG1osr.jpg',
       title: 'ارائه مؤثر ایده',
       part: 7,
       user: 'استاد نواب',
+      imgUser: '/img/P1QelCa8pYqsK1lAnkeJ232Fn75V8eLwgZx8p8Tc.jpg',
     },
     {
       img: '/img/QWUw6ABogReKd4XdXLB6RHmlLeqfUUCRkA45FzKQ.png',
       title: 'آموزش ایده‌پردازی',
       part: 21,
       user: 'ایده میده',
+      imgUser: '/img/TSIAe3b7o4C2F3TInFTOIBEMfmwETHyTxVkBvpez.jpg',
     },
     {
       img: '/img/W5nvmr54nl7uuLezo3UJukHLZVdvnpIqFkzhtKJS.jpg',
       title: 'تیم‌سازی و کار تیمی',
       part: 7,
       user: 'استاد رضا نفری',
+      imgUser: '/img/teacher.png',
     },
     {
       img: '/img/6F5AXto6bOU5ll8T81F6pSBmXhtlg4L8RAciVQOY.jpg',
       title: 'ضبط و تدوین صوت',
       part: 12,
       user: ' استاد حمیدرضا شمسایی',
+      imgUser: '/img/EMWODWbsoytNZ38HPbWcisxi6wAvVMQd7QZxbm88.jpg',
     },
     {
       img: '/img/sZ9aQ6B9u1CAZNVb7Ld9kRXvCoImCXZ4vnuZOY8k.jpg',
       title: 'مدیریت صفحات مجازی',
       part: 10,
       user: 'استاد مهرداد شاهسنایی',
+      imgUser: '/img/P1QelCa8pYqsK1lAnkeJ232Fn75V8eLwgZx8p8Tc (1).jpg',
     },
     {
       img: '/img/k5Ig4BopDzYgQjm8WOhOL46D9rTputIhvC9BQcav.jpg',
       title: 'کارگاه طراحی بوم',
       part: 9,
       user: 'استاد چپریان',
+      imgUser: '/img/P1QelCa8pYqsK1lAnkeJ232Fn75V8eLwgZx8p8Tc (1).jpg',
     },
     {
       img: '/img/K5Bp4GwyKLC1bglajK3lnDgkPrSxvPDVrZBXOxyu.jpg',
       title: 'آموزش فتوشاپ (فارسی)',
       part: 29,
       user: 'آپگراف',
+      imgUser: '/img/teacher (1).png',
     },
     {
       img: '/img/Gb2vrx1fCi2wA1O0QoUJROs15uWwExX9Vb6TUCEZ.jpg',
       title: 'کارآفرینی فرهنگی',
       part: 18,
       user: 'استاد نوید ادریس',
+      imgUser: '/img/teacher (1).png',
     },
   ];
 
@@ -157,7 +167,7 @@ export class HomeEscape {
 
     responsive: {
       0: {
-        items: 1 ,
+        items: 1,
         stagePadding: 10,
       },
       576: {
@@ -314,28 +324,28 @@ export class HomeEscape {
       title: 'موسسه قرآنی تسنیم لنجان',
       melli: 'شناسه ملی',
       melliNumber: 10980211432,
-      date: ' 1401/03/27   15 آذرماه 1400 '
+      date: ' 1401/03/27   15 آذرماه 1400 ',
     },
     {
       img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
       title: 'موسسه قرآنی تسنیم لنجان',
       melli: 'شناسه ملی',
       melliNumber: 10980211432,
-      date: ' 1401/03/27   15 آذرماه 1400 '
+      date: ' 1401/03/27   15 آذرماه 1400 ',
     },
     {
       img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
       title: 'موسسه قرآنی تسنیم لنجان',
       melli: 'شناسه ملی',
       melliNumber: 10980211432,
-      date: ' 1401/03/27   15 آذرماه 1400 '
+      date: ' 1401/03/27   15 آذرماه 1400 ',
     },
     {
       img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
       title: 'موسسه قرآنی تسنیم لنجان',
       melli: 'شناسه ملی',
       melliNumber: 10980211432,
-      date: ' 1401/03/27   15 آذرماه 1400 '
+      date: ' 1401/03/27   15 آذرماه 1400 ',
     },
   ];
 }

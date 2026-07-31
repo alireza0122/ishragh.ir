@@ -138,6 +138,14 @@
           aspect-ratio: 9/5;
           object-fit: cover;
         }
+        &-user-img {
+          width: 20px !important;
+
+          height: 20px;
+          border-radius: 50%;
+          aspect-ratio: 9/5;
+          object-fit: cover;
+        }
 
         &-part {
           font-size: 14px !important;
@@ -548,6 +556,13 @@
 }
 
 
+@media (max-width: 1040px) {
+  .fanos-slide{
+    border-radius: 0;
+    padding: 0;
+  }
+
+}
 
 
 
