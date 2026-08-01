@@ -4,11 +4,10 @@ import { ShowFacilities } from './show-facilities/show-facilities';
 import { ShowPublished } from './show-published/show-published';
 import { ShowVersion } from './show-version/show-version';
 import { ShowQuestions } from './show-questions/show-questions';
-import { ShowMain } from './show-main/show-main';
 
 @Component({
   selector: 'app-show',
-  imports: [ShowBanner, ShowFacilities, ShowPublished, ShowVersion, ShowQuestions, ShowMain],
+  imports: [ShowBanner, ShowFacilities, ShowPublished, ShowVersion, ShowQuestions],
   templateUrl: './show.html',
   styleUrl: './show.scss',
 })

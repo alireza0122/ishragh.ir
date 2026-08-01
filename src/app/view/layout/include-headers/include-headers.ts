@@ -26,7 +26,7 @@ export class IncludeHeaders {
     },
     { title: 'ثبت ایده', href: '/submit', icon: '' },
     { title: 'محصولات', href: '/show', icon: '' },
-    { title: 'تیم ها', href: '/', icon: '' },
+    { title: 'تیم ها', href: '/team', icon: '' },
     { title: 'رزرو', href: '/', icon: '' },
     { title: 'درباره ما', href: '/', icon: '' },
   ];
