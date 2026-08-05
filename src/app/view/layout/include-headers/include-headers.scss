@@ -1,16 +1,12 @@
-.bg-nav{
-  background: linear-gradient(263.23deg, rgba(39, 189, 188, 0.14) 0%, rgba(249, 211, 37, 0.14) 100%);
 
 
-}
 .nav {
   background-color: rgba(255, 255, 255, 0.90);
-  border-bottom: 2px solid #F9D325;
+  border-bottom: 3px solid #F9D325;
   box-shadow: 0 2px 4px rgba(193, 193, 193, 0.3);
   position: fixed;
   width: 100%;
   margin: 0 auto;
-  border-radius: 0 0 50px 50px;
   top: 0;
   z-index: 1000000 !important;
 
@@ -33,9 +29,27 @@
 }
 
 .img-header {
+  width: 32px;
+  height: 31px;
+
   &:hover {
     transform: scale(1.1);
   }
+}
+@media (min-width: 992px) {
+  .img-header {
+    width: 40px;
+    height: 43px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.img-header-title {
+  width: 100px;
+  height: 20px;
 }
 
 /* آیکون همبرگری */
@@ -43,13 +57,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
 
   cursor: pointer;
-
+  width: 40px !important;
+  height: 40px !important;
   border: 1px solid #F0F0F7;
-  border-radius: 10px;
-  padding: 10px !important;
+  border-radius: 15px;
+
   span {
     display: block;
     width: 23px;
@@ -62,9 +76,11 @@
     span:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
+
     span:nth-child(2) {
       opacity: 0;
     }
+
     span:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
     }
@@ -76,13 +92,14 @@
   top: 61px;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 80%;
   background-color: #fff;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
   z-index: 1000002 !important;
   transform: translateX(100%);
   transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1);
   will-change: transform;
+
   &.open {
     transform: translateX(0);
   }
@@ -91,30 +108,35 @@
     list-style: none;
   }
 
-  li {
-    margin-bottom: 18px;
-    border-bottom: 1px solid #F0F0F7;
-    &:hover{
-      transform: translate(10px);
-    }
-  }
+  //li {
+  //
+  //  &:hover {
+  //    transform: translate(10px);
+  //  }
+  //}
 
   .nav-link {
-    font-size: 15px;
+    padding: 14px;
+
+    font-size: 16px;
     color: #373F47;
   }
 }
+.linkMobile{
+  border-bottom: 1px solid #F0F0F7;
+}
+
+
 
 .mobile-backdrop {
   display: none;
   position: fixed;
   inset: 0;
   top: 61px;
-  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 555;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(3px);
 
   &.show {
@@ -142,4 +164,99 @@
 
   }
 
+}
+
+.flash {
+  border-radius: 30px;
+  width: 32px;
+  //height: 32px;
+  float: left;
+  padding: 2px 0;
+
+  background-color: #F0F0F7;
+}
+.flash {
+  transition: transform 0.3s ease;
+}
+.flash.rotated {
+  transform: rotate(180deg);
+}
+
+.submenu-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+  overflow: hidden;
+}
+
+.submenu-wrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.submenu-list {
+  border: 1px solid rgb(240, 240, 247);
+  border-radius: 10px;
+  min-height: 0;
+  margin: 0;
+
+
+    li:nth-child(1) &-link {
+      color: #159B80;
+    }
+
+    li:nth-child(2) &-link {
+      color: #F07168;
+    }
+
+    li:nth-child(3) &-link {
+      color: #3C42A0;
+    }
+
+    li:nth-child(4) &-link {
+      color: #00C0D1;
+  }
+
+}
+
+.submenu-list li {
+  list-style: disc;
+  color: #1e9b81;
+}
+
+.submenu-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+  overflow: hidden;
+}
+
+.submenu-wrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.submenu-list {
+  min-height: 0;
+  overflow: hidden;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.2s ease, padding 0.2s ease;
+
+  li:nth-child(1) &-link {
+    color: #159B80;
+  }
+  li:nth-child(2) &-link {
+    color: #F07168;
+  }
+  li:nth-child(3) &-link {
+    color: #3C42A0;
+  }
+  li:nth-child(4) &-link {
+    color: #00C0D1;
+  }
+}
+
+.submenu-wrapper.open .submenu-list {
+  border-color: rgb(240, 240, 247);
+  padding: 8px;
 }
