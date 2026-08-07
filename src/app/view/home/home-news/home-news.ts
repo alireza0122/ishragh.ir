@@ -26,15 +26,20 @@ export class HomeNews {
     responsive: {
       0: {
         items: 1,
+        stagePadding: 50,
+        margin: 15,
       },
       576: {
         items: 2,
+        margin: 10,
       },
       768: {
         items: 3,
+        margin: 10,
       },
       992: {
         items: 4,
+        margin: 10,
       },
     },
   };

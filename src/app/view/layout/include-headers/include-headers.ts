@@ -55,6 +55,6 @@ export class IncludeHeaders {
 
   @HostListener('window:scroll')
   onScroll(): void {
-    this.isScrolled = window.scrollY > 50;
+    this.isScrolled = window.scrollY > 58;
   }
 }
