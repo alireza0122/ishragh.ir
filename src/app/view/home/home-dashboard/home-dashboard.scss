@@ -215,3 +215,52 @@
     transform: scaleY(1.3);
   }
 }
+
+/* موبایل خیلی کوچک */
+@media (max-width: 320px) {
+  .news-item-box-img-top {
+    aspect-ratio: 4/3 !important;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 375px) {
+  .news-item-box-img-top {
+    aspect-ratio: 5 / 3;
+  }
+}
+
+/* موبایل معمولی */
+@media (max-width: 425px) {
+
+}
+
+/* موبایل بزرگ / تبلت کوچک */
+@media (max-width: 576px) {
+
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+
+}
+
+/* تبلت بزرگ / لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+
+}
+
+/* لپ‌تاپ */
+@media (max-width: 1200px) {
+  .main {
+    height: 40% !important;
+  }
+}
+
+/* دسکتاپ */
+@media (max-width: 1400px) {
+
+  .main {
+    height: 40% !important;
+  }
+}

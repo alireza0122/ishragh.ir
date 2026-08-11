@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { Component, ViewChild } from '@angular/core';
+import { CarouselModule, OwlOptions, CarouselComponent } from 'ngx-owl-carousel-o';
 
 type DataTypeFanos = {
   img: string;
@@ -52,6 +52,8 @@ type DataTypeSoog = {
   styleUrl: './home-escape.scss',
 })
 export class HomeEscape {
+  @ViewChild('karizmanCarousel')
+  karizmanCarousel!: CarouselComponent;
   customOptions: OwlOptions = {
     // loop: true,
     margin: 20,
@@ -163,13 +165,22 @@ export class HomeEscape {
     // autoplay: true,
     // autoplayTimeout: 3000,
     // autoplayHoverPause: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
     rtl: true,
 
     responsive: {
       0: {
         items: 1,
-        stagePadding: 10,
+        stagePadding: 20,
+        margin: 150,
       },
+      // 0: {
+      //   items: 1,
+      //   stagePadding: 20,
+      //   margin: 200,
+      // },
       576: {
         items: 2,
         stagePadding: 40,
@@ -184,6 +195,16 @@ export class HomeEscape {
       },
     },
   };
+
+  onKarizmanWheel(event: WheelEvent) {
+    event.preventDefault();
+
+    if (event.deltaY > 0 || event.deltaX > 0) {
+      this.karizmanCarousel.next();
+    } else {
+      this.karizmanCarousel.prev();
+    }
+  }
   karizmanData: DataTypeKarizman[] = [
     {
       img: '/img/mvBTmDqZ73gxnzboDmB5cQ9K2PCRHYmE5IGMcY36_.png',

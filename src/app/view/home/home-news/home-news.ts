@@ -39,7 +39,8 @@ export class HomeNews {
       },
       992: {
         items: 4,
-        margin: 10,
+        margin: 35,
+        stagePadding: 50  ,
       },
     },
   };

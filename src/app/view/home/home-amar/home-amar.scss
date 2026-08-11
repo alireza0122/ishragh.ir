@@ -1,7 +1,8 @@
-.page-2{
+.page-2 {
   width: 162px;
 }
-.mmd{
+
+.mmd {
   z-index: -1;
   color: #18A1A1;
   right: -50%;
@@ -10,13 +11,14 @@
   max-width: 100%;
 
 }
+
 @media screen and (max-width: 768px) {
   .page-2 {
     width: 72px;
 
 
   }
-  .mmd{
+  .mmd {
 
     z-index: -1;
     color: #18A1A1;
@@ -36,52 +38,96 @@
   color: #18A1A1;
   position: relative;
   cursor: pointer !important;
-  &:hover .dd{
+
+  &:hover .dd {
     width: 100%;
     border-radius: 16px;
     cursor: pointer !important;
   }
 }
 
-.dd{
+.dd {
   position: absolute;
   background-color: #F9D325;
   width: 49px;
   height: 6px;
   right: 1px;
 }
-.home-amar-box{
+
+.home-amar-box {
   min-height: 120px;
-  min-width: 90px  ;
+  min-width: 90px;
   background: #FFFFFF;
   box-shadow: 10px 20px 20px rgba(193, 193, 193, 0.2);
   border-radius: 20px;
   width: 100%;
 }
 
-.home-amar-box-description{
+.home-amar-box-description {
   color: #18A1A1;
   text-align: center;
-
+  min-width: fit-content;
 }
-.home-amar-box-title{
+
+.home-amar-box-title {
   color: #373F47;
   text-align: center;
-  width: 55%;
+  //width: 55%;
 
 }
+
 @media (min-width: 1024px) {
-  .home-amar-box-description{
+  .home-amar-box-description {
     color: #18A1A1;
     min-width: 100%;
     text-align: center;
   }
-  .home-amar-box{
+  .home-amar-box {
     min-height: 112px;
-    min-width: 213px  ;
+    min-width: 213px;
     background: #FFFFFF;
     box-shadow: 10px 20px 20px rgba(193, 193, 193, 0.2);
     border-radius: 20px;
     width: 100%;
   }
+}
+
+/* موبایل خیلی کوچک */
+@media (max-width: 320px) {
+
+}
+
+/* موبایل کوچک */
+@media (max-width: 375px) {
+
+}
+
+/* موبایل معمولی */
+@media (max-width: 425px) {
+
+}
+
+/* موبایل بزرگ / تبلت کوچک */
+@media (max-width: 576px) {
+
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+
+}
+
+/* تبلت بزرگ / لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+
+}
+
+/* لپ‌تاپ */
+@media (max-width: 1200px) {
+
+}
+
+/* دسکتاپ */
+@media (max-width: 1400px) {
+
 }

@@ -3,7 +3,6 @@
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
-
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 body{
   background-color: #ffffff ;
@@ -24,11 +23,28 @@ li{
     padding: 20px 0 !important;
   }
 }
+
+.fanos-slide-body {
+  .owl-stage {
+    padding: 15px 0 !important;
+  }
+}
+.karizman-slide-body {
+  .owl-stage {
+    padding:  34px 10px 20px 0 !important;
+  }
+}
+.dal-slide-body {
+  .owl-stage {
+    padding:  10px 10px 15px 0 !important;
+  }
+}
+
+
+
 .soog-slide {
   .owl-stage {
-    padding-bottom: 20px !important;
-    padding-top:
-      20px !important;
+    padding: 45px 10px 10px 0 !important;
   }
 }
 

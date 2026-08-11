@@ -93,12 +93,56 @@
     min-height: 250px;
     border: 1px solid #D3D3D3;
   }
-  .news-item-box-img-top{
-    aspect-ratio: 4 / 3;
 
+}
+
+.owl-stage {
+  padding: 26px !important;
+}
+
+
+
+
+/* موبایل خیلی کوچک */
+@media (max-width: 320px) {
+  .news-item-box-img-top {
+    aspect-ratio: 4/3 !important;
   }
 }
 
-.owl-stage{
-  padding:  26px !important;
+/* موبایل کوچک */
+@media (max-width: 375px) {
+  .news-item-box-img-top {
+    aspect-ratio: 5 / 3;
+  }
+}
+
+/* موبایل معمولی */
+@media (max-width: 425px) {
+
+}
+
+/* موبایل بزرگ / تبلت کوچک */
+@media (max-width: 576px) {
+
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+
+}
+
+/* تبلت بزرگ / لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+
+}
+
+/* لپ‌تاپ */
+@media (max-width: 1200px) {
+
+}
+
+/* دسکتاپ */
+@media (max-width: 1400px) {
+
 }
