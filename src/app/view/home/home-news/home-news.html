@@ -1,13 +1,24 @@
 <div class="home-news mt-4">
   <div class="container">
     <div class="row">
-      <div class="col-12 ">
-        <div class=" d-flex justify-content-center justify-content-lg-start  ">
+      <div class="col-12">
+        <div class=" d-flex justify-content-center justify-content-lg-between align-items-center  ">
           <div class="shared-box ">
             <h3 class="p-0 m-0 shared-box-title fw-bold fs-lg-32px fs-20px">
               جدیدترین اخبار
             </h3>
             <div class="dd"></div>
+          </div>
+          <div class=" d-lg-block d-none">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fs-16px m-0 fw-bold">
+                آرشیو اخبار
+              </h3>
+              <svg class="hvr-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none" style="margin-right: 11px">
+                <path d="M2.59998 7.71C2.50625 7.61704 2.43185 7.50644 2.38109 7.38458C2.33032 7.26272 2.30418 7.13202 2.30418 7C2.30418 6.86799 2.33032 6.73729 2.38109 6.61543C2.43185 6.49357 2.50625 6.38297 2.59998 6.29L7.18997 1.71C7.2837 1.61704 7.35809 1.50644 7.40886 1.38458C7.45963 1.26272 7.48577 1.13201 7.48577 1C7.48577 0.867988 7.45963 0.737282 7.40886 0.615423C7.35809 0.493563 7.2837 0.382962 7.18997 0.289999C7.00261 0.103748 6.74915 -0.000793457 6.48497 -0.000793457C6.22078 -0.000793457 5.96733 0.103748 5.77997 0.289999L1.18998 4.88C0.628179 5.4425 0.312622 6.205 0.312622 7C0.312622 7.79501 0.628179 8.5575 1.18998 9.12L5.77997 13.71C5.96623 13.8948 6.21763 13.9989 6.47997 14C6.61158 14.0008 6.74204 13.9755 6.86388 13.9258C6.98571 13.876 7.09653 13.8027 7.18997 13.71C7.2837 13.617 7.35809 13.5064 7.40886 13.3846C7.45963 13.2627 7.48577 13.132 7.48577 13C7.48577 12.868 7.45963 12.7373 7.40886 12.6154C7.35809 12.4936 7.2837 12.383 7.18997 12.29L2.59998 7.71Z" fill="black"></path>
+              </svg>
+            </div>
+
           </div>
         </div>
 
@@ -20,8 +31,8 @@
                   <div class="news-item-box-img">
                     <img class="news-item-box-img-top" [src]="item.img" [alt]="item.title">
                   </div>
-                  <p class="my-3"></p>
-                  <h3 class="news-item-title fs-16px mx-2 text-justify text-over o2">{{ item.title }}</h3>
+<!--                  <p class="mmd-l">cs</p>-->
+                  <h3 class="news-item-title fs-16px mx-2 text-justify text-over o2 ">{{ item.title }}</h3>
                 </div>
               </ng-template>
             }

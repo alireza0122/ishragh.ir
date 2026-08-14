@@ -7,7 +7,7 @@
   color: #18A1A1;
   right: -50%;
   height: 100%;
-  top: -25%;
+  top: -10%;
   max-width: 100%;
 
 }
@@ -15,8 +15,6 @@
 @media screen and (max-width: 768px) {
   .page-2 {
     width: 72px;
-
-
   }
   .mmd {
 
@@ -26,7 +24,7 @@
     transform: translateX(-40%);
 
     height: 100%;
-    top: -30%;
+    top: -10%;
     max-width: 100%;
 
   }
@@ -118,7 +116,14 @@
 }
 
 /* تبلت بزرگ / لپ‌تاپ کوچک */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+  .page-2 {
+    height: 122px;
+    width: 126px;
+  }
+  .mmd {
+    right: -35%;
+  }
 
 }
 

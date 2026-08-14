@@ -245,6 +245,7 @@
 }
 
 .home-pillars-item-box-description {
+  line-height: 24px;
   min-height: 150px;
   position: relative;
 }
@@ -542,6 +543,7 @@
 @media (max-width: 769px) {
   .home-pillars-item-img-top {
     width: 90px;
+    min-width: 90px;
     height: 90px;
 
     &:after {

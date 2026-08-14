@@ -16,7 +16,7 @@ li{
   list-style: none;
 }
 .owl-stage{
-  padding: 30px 20px !important; ;
+  padding: 17px 0 !important;
 }
 .dal-slide-body {
   .owl-stage {
@@ -51,4 +51,49 @@ li{
 
 html {
   scroll-behavior: smooth;
+}
+
+
+/* موبایل خیلی کوچک */
+@media (max-width: 320px) {
+  .owl-stage{
+    padding: 17px 0 !important;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 375px) {
+  .owl-stage{
+    padding: 17px 18px !important;
+  }
+}
+
+/* موبایل معمولی */
+@media (max-width: 425px) {
+
+}
+
+/* موبایل بزرگ / تبلت کوچک */
+@media (max-width: 576px) {
+
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+
+}
+
+/* تبلت بزرگ / لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+
+}
+
+/* لپ‌تاپ */
+@media (max-width: 1200px) {
+
+}
+
+/* دسکتاپ */
+@media (max-width: 1400px) {
+
 }

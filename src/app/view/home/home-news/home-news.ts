@@ -14,7 +14,7 @@ type DataType = {
 })
 export class HomeNews {
   customOptions: OwlOptions = {
-    // loop: true,
+    loop: true,
     margin: 20,
     nav: false,
     dots: false,
@@ -26,21 +26,53 @@ export class HomeNews {
     responsive: {
       0: {
         items: 1,
-        stagePadding: 50,
-        margin: 15,
+        stagePadding: 40,
+        margin: 30,
       },
-      576: {
-        items: 2,
-        margin: 10,
+      375: {
+        items: 1,
+        stagePadding: 50,
+        margin: 30,
+      },
+      425: {
+        items: 1,
+        stagePadding: 50,
+        margin: 30,
+      },
+
+      484: {
+        items: 3,
+        // stagePadding: 50,
+        margin: 30,
+      },
+
+      610: {
+        items: 4,
+        margin: 30,
+        stagePadding: 30,
       },
       768: {
-        items: 3,
-        margin: 10,
+        items: 4,
+        margin: 30,
+        stagePadding: 30,
       },
       992: {
+        items: 1,
+        margin: 35,
+
+        // stagePadding: 50  ,
+      },
+      1024: {
+        items: 1,
+        margin: 35,
+
+        // stagePadding: 50  ,
+      },
+      1040: {
         items: 4,
         margin: 35,
-        stagePadding: 50  ,
+
+        stagePadding: 30,
       },
     },
   };
