@@ -62,23 +62,22 @@
 
 .li-link a {
   color: #373F47;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    content: "";
+    background-color: #6e6b7a;
+    width: 5px;
+    height: 5px;
+  }
 
 }
 
 .li-link {
-  position: relative;
 
-
-  &:after {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    content: "";
-    background-color: #18A1A1;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-  }
 
   &:hover {
     transform: translateX(-2.5px) translateY(-2.5px);
@@ -170,9 +169,11 @@
 .abut-hover:hover {
   color: #686868 !important;
 }
+
 .abut:hover {
   color: #686868 !important;
 }
+
 .abut-hover {
   position: relative;
 
@@ -198,8 +199,19 @@
   }
 
 }
-.img-footer{
-  &:hover{
+
+.img-footer {
+  &:hover {
     transform: scale(1.1);
   }
+}
+
+.mmd {
+  font-size: 14px;
+  margin-top: 1em;
+  color: #F9D325;
+}
+
+.text-color-me {
+  color: #D3D3D3;
 }

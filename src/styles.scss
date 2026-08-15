@@ -3,7 +3,6 @@
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
-
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 body{
   background-color: #ffffff ;
@@ -17,21 +16,84 @@ li{
   list-style: none;
 }
 .owl-stage{
-  padding: 30px 20px !important; ;
+  padding: 17px 0 !important;
 }
 .dal-slide-body {
   .owl-stage {
     padding: 20px 0 !important;
   }
 }
+
+.fanos-slide-body {
+  .owl-stage {
+    padding: 15px 0 !important;
+  }
+}
+.karizman-slide-body {
+  .owl-stage {
+    padding:  34px 10px 20px 0 !important;
+  }
+}
+.dal-slide-body {
+  .owl-stage {
+    padding:  10px 10px 15px 0 !important;
+  }
+}
+
+
+
 .soog-slide {
   .owl-stage {
-    padding-bottom: 20px !important;
-    padding-top: 55px !important;
+    padding: 45px 10px 10px 0 !important;
   }
 }
 
 
 html {
   scroll-behavior: smooth;
+}
+
+
+/* موبایل خیلی کوچک */
+@media (max-width: 320px) {
+  .owl-stage{
+    padding: 17px 0 !important;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 375px) {
+  .owl-stage{
+    padding: 17px 18px !important;
+  }
+}
+
+/* موبایل معمولی */
+@media (max-width: 425px) {
+
+}
+
+/* موبایل بزرگ / تبلت کوچک */
+@media (max-width: 576px) {
+
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+
+}
+
+/* تبلت بزرگ / لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+
+}
+
+/* لپ‌تاپ */
+@media (max-width: 1200px) {
+
+}
+
+/* دسکتاپ */
+@media (max-width: 1400px) {
+
 }

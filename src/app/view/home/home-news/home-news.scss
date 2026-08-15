@@ -79,8 +79,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     transition: color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-    position: absolute;
-    bottom: 15px;
   }
 
   &:hover &-title {
@@ -93,12 +91,95 @@
     min-height: 250px;
     border: 1px solid #D3D3D3;
   }
-  .news-item-box-img-top{
-    aspect-ratio: 4 / 3;
 
+}
+
+.owl-stage {
+  padding: 26px !important;
+}
+
+
+/* موبایل خیلی کوچک */
+@media (max-width: 320px) {
+  .news-item-box-img-top {
+    aspect-ratio: 4/3 !important;
   }
 }
 
-.owl-stage{
-  padding:  26px !important;
+/* موبایل کوچک */
+@media (max-width: 375px) {
+  .news-item-box-img-top {
+    aspect-ratio: 5 / 3;
+  }
+}
+
+/* موبایل معمولی */
+@media (max-width: 425px) {
+  .mmd-l {
+    margin-top: 12px;
+    padding: 20px 0;
+    margin-bottom: 8px;
+  }
+
+}
+
+/* موبایل بزرگ / تبلت کوچک */
+@media (max-width: 576px) {
+
+  .news-item-title{
+    position: absolute;
+    bottom: 10px;
+
+  }
+
+}
+
+/* تبلت */
+@media (min-width: 768px) {
+  .news-item {
+    min-height: 250px;
+  }
+
+
+}
+
+
+/* تبلت بزرگ / لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+
+
+}
+
+/* لپ‌تاپ */
+@media (min-width: 1001px) {
+  .news-item-title{
+    position: absolute;
+    bottom: 25px;
+
+  }
+  .news-item-box-img-top {
+    aspect-ratio: 6/4 !important;
+  }
+}
+
+/* دسکتاپ */
+@media (min-width: 1400px) {
+
+  .news-item-box-img-top {
+    aspect-ratio: 6/3 !important;
+  }
+}
+//////////////////////////
+
+@media (min-width: 767px) and (max-width: 1000px)  {
+
+  .news-item-box-img-top {
+    aspect-ratio: 3/3 !important;
+  }
+  .news-item-title{
+    position: absolute;
+    bottom: 10px;
+
+  }
+
 }
