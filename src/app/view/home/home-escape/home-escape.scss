@@ -229,8 +229,8 @@
 
 
       &-item {
-        width: 390px;
-        height: 213px;
+        //width: 360px!important;
+        //height: 213px !important;
         background-color: white;
         border-radius: 15px;
         position: relative;
@@ -567,7 +567,7 @@
 }
 
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
   .fanos-slide {
     border-radius: 0;
     padding: 0;
@@ -575,7 +575,7 @@
 
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
   .karizman-slide {
     border-radius: 0;
     padding: 0;
@@ -583,13 +583,13 @@
 
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
   .dal-slide {
     border-radius: 0;
     padding: 0;
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
   .soog-slide {
     border-radius: 0;
     padding: 0;
@@ -625,18 +625,49 @@
 
 
 
+.karizman-slide-body-item-boxAA{
+
+}
+
+.karizman-slide-body-item-box-EndTimeAA{
+  font-size: 14px;
+  font-weight: bold;
+  color: #2196f3;
+  margin-right: 2px;
+}
+.karizman-slide-body-item-box-StartTimeAA{
+  font-size: 14px;
+  font-weight: bold;
+  color: #2196f3;
+  margin-right: 2px;
+}
+
+
+//
+.karizman-progress-track {
+  width: 100%;
+  height: 4px;
+  background-color: #E5E5E5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.karizman-progress-fill {
+  height: 100%;
+  background-color: #2499ef;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
 
 
 
 
-
-
-
-
-
-
-
-
+//@media (max-width: 768px) {
+//  .karizman-slide-body-item{
+//    width: 390px;
+//  }
+//}
+//
 
 
 

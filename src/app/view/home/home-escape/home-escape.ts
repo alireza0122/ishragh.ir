@@ -67,11 +67,15 @@ export class HomeEscape {
     responsive: {
       0: {
         items: 1,
-        stagePadding: 30,
+        stagePadding: 50,
+      },
+      375: {
+        items: 1,
+        stagePadding: 100,
       },
       576: {
         items: 2,
-        stagePadding: 80,
+        stagePadding: 30,
       },
       768: {
         items: 3,
@@ -157,6 +161,45 @@ export class HomeEscape {
   ];
 
   karizman: OwlOptions = {
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+
+    // autoplay: true,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    rtl: true,
+
+    responsive: {
+      0: {
+        items: 0.7,
+        stagePadding: 30,
+        margin: 10,
+      },
+      576: {
+        items: .5,
+        stagePadding: 10,
+        margin: 20,
+      },
+
+      990: {
+        items: 2,
+        stagePadding: 350,
+        margin: 30,
+      },
+
+      1200: {
+        items: 5,
+        stagePadding: 50,
+        margin: 80,
+      },
+    },
+  };
+  Tookarizman: OwlOptions = {
     // loop: true,
     margin: 20,
     nav: false,
@@ -205,13 +248,15 @@ export class HomeEscape {
       this.karizmanCarousel.prev();
     }
   }
+
+  calculateProgress(startDateGregorian: Date, endDateGregorian: Date): number {
+    const now = new Date();
+    const total = endDateGregorian.getTime() - startDateGregorian.getTime();
+    const elapsed = now.getTime() - startDateGregorian.getTime();
+    const percent = (elapsed / total) * 100;
+    return Math.min(100, Math.max(0, percent)); // بین 0 تا 100 محدودش کن
+  }
   karizmanData: DataTypeKarizman[] = [
-    {
-      img: '/img/mvBTmDqZ73gxnzboDmB5cQ9K2PCRHYmE5IGMcY36_.png',
-      title: 'رویداد ایده پردازی هم سرنوشت',
-      StartTime: 'از 12 اردیبهشت 1405',
-      EndTime: 'تا 12 اردیبهشت 1406',
-    },
     {
       img: '/img/B0hjpLIPvQUbOawVl6w7csHyNuDLnO7J2aWhoOHn_.png',
       title: 'خدمات خلاق',

@@ -66,6 +66,11 @@ html {
   .owl-stage{
     padding: 17px 18px !important;
   }
+  .fanos-slide-body {
+    .owl-stage {
+      padding: 15px 0  15px 13px !important;
+    }
+  }
 }
 
 /* موبایل معمولی */
@@ -76,6 +81,11 @@ html {
 /* موبایل بزرگ / تبلت کوچک */
 @media (max-width: 576px) {
 
+  .fanos-slide-body {
+    .owl-stage {
+      padding: 15px 0  15px 13px !important;
+    }
+  }
 }
 
 /* تبلت */
