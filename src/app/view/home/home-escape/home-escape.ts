@@ -176,9 +176,9 @@ export class HomeEscape {
 
     responsive: {
       0: {
-        items: 0.7,
-        stagePadding: 30,
-        margin: 10,
+        items: 0.1,
+        stagePadding: 10,
+        margin: 15,
       },
       576: {
         items: .5,
