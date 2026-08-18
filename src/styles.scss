@@ -15,9 +15,9 @@ a{
 li{
   list-style: none;
 }
-.owl-stage{
-  padding: 17px 0 !important;
-}
+//.owl-stage{
+//  padding: 17px 0 !important;
+//}
 .dal-slide-body {
   .owl-stage {
     padding: 20px 0 !important;
@@ -29,11 +29,9 @@ li{
     padding: 15px 0 !important;
   }
 }
-.karizman-slide-body {
-  .owl-stage {
-    padding:  34px 10px 20px 0 !important;
-  }
-}
+//.karizman-slide-body {
+//    padding:  34px 10px 20px 0 !important;
+//}
 .dal-slide-body {
   .owl-stage {
     padding:  10px 10px 15px 0 !important;
@@ -57,18 +55,23 @@ html {
 /* موبایل خیلی کوچک */
 @media (max-width: 320px) {
   .owl-stage{
-    padding: 17px 0 !important;
+    padding: 21px 0 !important;
   }
 }
 
 /* موبایل کوچک */
 @media (max-width: 375px) {
-  .owl-stage{
-    padding: 17px 18px !important;
-  }
+  //.owl-stage{
+  //  padding: 21px 18px !important;
+  //}
   .fanos-slide-body {
+    padding: 25px 0 !important;
+  }
+}
+@media (min-width: 375px) {
+  .karizman-slide-body {
     .owl-stage {
-      padding: 15px 0  15px 13px !important;
+      padding:  20px 0 !important;
     }
   }
 }
@@ -76,15 +79,13 @@ html {
 /* موبایل معمولی */
 @media (max-width: 425px) {
 
+
 }
 
 /* موبایل بزرگ / تبلت کوچک */
 @media (max-width: 576px) {
-
   .fanos-slide-body {
-    .owl-stage {
-      padding: 15px 0  15px 13px !important;
-    }
+    padding: 25px 0 !important;
   }
 }
 

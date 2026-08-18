@@ -54,36 +54,37 @@ type DataTypeSoog = {
 export class HomeEscape {
   @ViewChild('karizmanCarousel')
   karizmanCarousel!: CarouselComponent;
+
   customOptions: OwlOptions = {
-    // loop: true,
+    loop: true,
     margin: 20,
     nav: false,
     dots: false,
-    // autoplay: true,
-    // autoplayTimeout: 3000,
-    // autoplayHoverPause: true,
+    center: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
     rtl: true,
-
     responsive: {
       0: {
-        items: 1,
-        stagePadding: 50,
+        items: 1.13,
       },
-      375: {
-        items: 1,
-        stagePadding: 100,
+      359: {
+        items: 1.33,
       },
-      576: {
-        items: 2,
-        stagePadding: 30,
+      409: {
+        items: 1.5,
       },
-      768: {
-        items: 3,
-        stagePadding: 50,
+      752: {
+        items: 2.7,
       },
-      992: {
-        items: 4,
-        stagePadding: 30,
+      623: {
+        items: 1.955,
+      },
+      864: {
+        items: 3.01,
       },
     },
   };
@@ -177,28 +178,44 @@ export class HomeEscape {
     responsive: {
       0: {
         items: 0.1,
-        stagePadding: 10,
+        stagePadding: 0,
         margin: 15,
       },
-      576: {
-        items: .5,
+      304: {
+        items: 0.99,
+      },
+
+      399: {
+        items: 1,
+        stagePadding: 10,
+
+      },
+
+      752: {
+        items: 1.9,
+      },
+
+      425: {
+        items: 1.8,
+        stagePadding: 10,
+
+        margin: 20,
+      },
+
+      623: {
+        items: 1.24,
         stagePadding: 10,
         margin: 20,
       },
 
-      990: {
+      864: {
         items: 2,
-        stagePadding: 350,
-        margin: 30,
-      },
-
-      1200: {
-        items: 5,
-        stagePadding: 50,
-        margin: 80,
+        stagePadding: 10,
+        margin: 20,
       },
     },
   };
+
   Tookarizman: OwlOptions = {
     // loop: true,
     margin: 20,

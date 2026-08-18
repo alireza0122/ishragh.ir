@@ -51,13 +51,23 @@
 
 .borderc {
 
-  position: relative;
+  position: absolute;
+  top: 41%;
+  left: 0;
+  right: 0;
+
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 10px !important;
+
   border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
   white-space: nowrap;
-  border-bottom: 1px solid #D3D3D3;
+
 }
 
 //.borderc::after {
@@ -89,7 +99,7 @@
 
 .karizman-slide-img {
   position: relative;
-  top: -25px;
+  top: -30px;
 }
 
 .karizman-slide-body-item:hover .karizman-slide-body-item-img {
@@ -140,7 +150,7 @@
       &-item {
         background-color: white;
         border-radius: 15px;
-        aspect-ratio: 4/2;
+        //aspect-ratio: 4/2;
 
         &-img {
           width: 100%;
@@ -228,18 +238,10 @@
     &-body {
 
       &-item {
-        //aspect-ratio: 9 /6 !important;
-        //width: 100%;
-        //height: 213px !important;
         background-color: white;
         border-radius: 15px;
         position: relative;
-
-        &-title {
-          width: 65% !important;
-
-        }
-
+        &-title {}
         &-img {
           width: 110px;
           height: 110px;
@@ -662,17 +664,21 @@
 
 
 
-@media (max-width: 768px) {
-  .karizman-slide-body-item-title {
-    width: 55% !important;
+//@media (max-width: 768px) {
+//  .karizman-slide-body-item-title {
+//    width: 55% !important;
+//
+//  }
+//}
 
-  }
+
+
+
+.img-karizma{
+  width: 134px;
+  height: 139px;
+
 }
-
-
-
-
-
 
 
 
