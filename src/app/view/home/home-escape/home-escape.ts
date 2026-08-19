@@ -88,6 +88,22 @@ export class HomeEscape {
       },
     },
   };
+
+  // category: [
+  //   {
+  //     title: 'نهیمکت';
+  //     id: 1;
+  //   },
+  //   {
+  //     title: 'نهیمکت';
+  //     id: 2;
+  //   },
+  //   {
+  //     title: 'نهیمکت';
+  //     id: 3;
+  //   },
+  // ];
+
   Fanos: DataTypeFanos[] = [
     {
       img: '/img/3zy8PsNkn2e1s3R8h87KREP2nohC6UoJl8HfIFEA.jpg',
@@ -95,6 +111,12 @@ export class HomeEscape {
       part: 11,
       user: 'دکتر باباخان',
       imgUser: '/img/ntZTy5JI0diYAKXMfdZN0kymR0ZOTcnoHuoY1FuE (1).png',
+      // category: [
+      //   {
+      //     title: 'نهیمکت',
+      //     id: 3,
+      //   },
+      // ],
     },
     {
       img: '/img/WEP3KM4kORJUZpuYN3duP2HVygeUvKltvAZSckE8.jpg',
@@ -188,7 +210,6 @@ export class HomeEscape {
       399: {
         items: 1,
         stagePadding: 10,
-
       },
 
       752: {
@@ -217,7 +238,7 @@ export class HomeEscape {
   };
 
   Tookarizman: OwlOptions = {
-    // loop: true,
+    loop: true,
     margin: 20,
     nav: false,
     dots: false,
@@ -231,27 +252,30 @@ export class HomeEscape {
     rtl: true,
 
     responsive: {
-      0: {
+      294: {
+        items: 0.99,
+      },
+
+      399: {
         items: 1,
-        stagePadding: 20,
-        margin: 150,
+        stagePadding: 5,
       },
-      // 0: {
-      //   items: 1,
-      //   stagePadding: 20,
-      //   margin: 200,
-      // },
-      576: {
-        items: 2,
-        stagePadding: 40,
+      623: {
+        items: 1.3,
       },
-      768: {
-        items: 2,
-        stagePadding: 60,
+      752: {
+        items: 1.8,
       },
-      992: {
+      604: {
+        items: 1.3,
+      },
+      854: {
+        items: 2.1,
+        stagePadding: 5,
+      },
+      864: {
         items: 2,
-        stagePadding: 80,
+        stagePadding: 5,
       },
     },
   };
