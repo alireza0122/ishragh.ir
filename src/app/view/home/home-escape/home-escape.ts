@@ -425,9 +425,64 @@ export class HomeEscape {
     },
   ];
 
+  Soog: OwlOptions = {
+    loop: true,
+    nav: false,
+    dots: false,
+
+    // autoplay: true,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    rtl: true,
+    margin: 15,
+    responsive: {
+      0: {
+        items: 0.1,
+        // stagePadding: 0,
+      },
+      304: {
+        items: 0.99,
+      },
+      401: {
+        items: 1,
+        stagePadding: 10,
+      },
+
+      615: {
+        items: 1.7,
+      },
+      623: {
+        items: 1.7
+                  ,
+      },
+
+      752: {
+        items: 1.9,
+      },
+
+      425: {
+        items: 1.8,
+        stagePadding: 10,
+
+        margin: 20,
+      },
+
+
+
+      864: {
+        items: 2,
+        stagePadding: 10,
+        margin: 20,
+      },
+    },
+  };
+
   Soogdata: DataTypeSoog[] = [
     {
-      img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
+      img: '/img/tljKRLhLCtda8mWVmrTntbX43RT4uQ2AmIuVwxOs.png',
       title: 'موسسه قرآنی تسنیم لنجان',
       melli: 'شناسه ملی',
       melliNumber: 10980211432,
