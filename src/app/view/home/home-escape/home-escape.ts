@@ -77,7 +77,7 @@ export class HomeEscape {
       409: {
         items: 1.5,
       },
-      752: {
+      744: {
         items: 2.7,
       },
       623: {
