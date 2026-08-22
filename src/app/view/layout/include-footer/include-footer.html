@@ -5,8 +5,6 @@
         <div class="border-bottom mt-5">
         </div>
       </div>
-
-
       <div class="col-12 col-lg-3 ">
         <div class="d-flex justify-content-center align-items-center">
           <img class="mt-4 img-footer" src="/img/footer-logo.svg" alt="footer-logo">
@@ -37,12 +35,14 @@
                   </clipPath>
                 </defs>
               </svg>
-              <p class="fs-16px">
+              <p class="fs-16px text-black">
 
                 31154110
                 <span class=" text-color-me">025</span></p>
             </div>
           </div>
+
+
           <div class="col-lg-5 col-6">
             <div class="d-flex justify-content-between abut-hover ">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -62,6 +62,7 @@
                 33155675</p>
             </div>
           </div>
+
           <div class="col-lg-5 col-6">
             <div class="d-flex justify-content-between abut">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -93,6 +94,7 @@
 
             </div>
           </div>
+
           <div class="col-lg-5 col-6">
             <div class="d-flex justify-content-between abut-hover ">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -315,19 +317,21 @@
         </div>
       </div>
 
-      <div class="col-lg-5 col-12 my-2  d-flex justify-content-center flex-column align-items-center">
-        <a class="fs-14px link-title" href="/">
+      <div class="col-lg-5 col-12 my-2  d-flex justify-content-center flex-column align-items-start">
+        <a class="fs-14px link-title my-2" href="/">
           دسترسی سریع
         </a>
-        <ul class=" ul-link p-0 ">
-          <div class="row">
-            <li class="col-lg-6 col-4 px-2  mt-1 li-link" *ngFor="let item of items">
-              <a class=" fs-14px" [href]="item.link">
+        <div class="container">
+          <div class="row mx-2">
+
+            <div class="col-lg-6 col-4 mb-2  mt-1 li-linkm p-0" *ngFor="let item of items">
+              <a class="fs-14px  w-100 " [href]="item.link">
                 {{ item.title }}
               </a>
-            </li>
+            </div>
+
           </div>
-        </ul>
+        </div>
       </div>
 
       <div class="col-12">

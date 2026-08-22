@@ -43,11 +43,25 @@
   right: -11px;
   bottom: -11px;
 }
-.img-colleagues{
+
+.img-colleagues {
+
   width: 50px;
   height: 50px;
 
 }
 
+@media (min-width: 1024px) {
+  .w-lg-75 {
+    width: 75%;
+  }
+  .mx-md-auto {
+    margin: auto;
+  }
+  .img-colleagues {
+    width: 80px;
+    height: 80px;
+  }
 
+}
 

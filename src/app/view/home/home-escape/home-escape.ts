@@ -54,35 +54,56 @@ type DataTypeSoog = {
 export class HomeEscape {
   @ViewChild('karizmanCarousel')
   karizmanCarousel!: CarouselComponent;
+
   customOptions: OwlOptions = {
-    // loop: true,
+    loop: true,
     margin: 20,
     nav: false,
     dots: false,
-    // autoplay: true,
-    // autoplayTimeout: 3000,
-    // autoplayHoverPause: true,
+    center: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
     rtl: true,
-
     responsive: {
       0: {
-        items: 1,
-        stagePadding: 30,
+        items: 1.13,
       },
-      576: {
-        items: 2,
-        stagePadding: 80,
+      359: {
+        items: 1.33,
       },
-      768: {
-        items: 3,
-        stagePadding: 50,
+      409: {
+        items: 1.5,
       },
-      992: {
-        items: 4,
-        stagePadding: 30,
+      744: {
+        items: 2.7,
+      },
+      623: {
+        items: 1.955,
+      },
+      864: {
+        items: 3.01,
       },
     },
   };
+
+  // category: [
+  //   {
+  //     title: 'نهیمکت';
+  //     id: 1;
+  //   },
+  //   {
+  //     title: 'نهیمکت';
+  //     id: 2;
+  //   },
+  //   {
+  //     title: 'نهیمکت';
+  //     id: 3;
+  //   },
+  // ];
+
   Fanos: DataTypeFanos[] = [
     {
       img: '/img/3zy8PsNkn2e1s3R8h87KREP2nohC6UoJl8HfIFEA.jpg',
@@ -90,6 +111,12 @@ export class HomeEscape {
       part: 11,
       user: 'دکتر باباخان',
       imgUser: '/img/ntZTy5JI0diYAKXMfdZN0kymR0ZOTcnoHuoY1FuE (1).png',
+      // category: [
+      //   {
+      //     title: 'نهیمکت',
+      //     id: 3,
+      //   },
+      // ],
     },
     {
       img: '/img/WEP3KM4kORJUZpuYN3duP2HVygeUvKltvAZSckE8.jpg',
@@ -157,7 +184,7 @@ export class HomeEscape {
   ];
 
   karizman: OwlOptions = {
-    // loop: true,
+    loop: true,
     margin: 20,
     nav: false,
     dots: false,
@@ -172,26 +199,83 @@ export class HomeEscape {
 
     responsive: {
       0: {
+        items: 0.1,
+        stagePadding: 0,
+        margin: 15,
+      },
+      304: {
+        items: 0.99,
+      },
+
+      399: {
         items: 1,
-        stagePadding: 20,
-        margin: 150,
+        stagePadding: 10,
       },
-      // 0: {
-      //   items: 1,
-      //   stagePadding: 20,
-      //   margin: 200,
-      // },
-      576: {
-        items: 2,
-        stagePadding: 40,
+
+      752: {
+        items: 1.9,
       },
-      768: {
-        items: 2,
-        stagePadding: 60,
+
+      425: {
+        items: 1.8,
+        stagePadding: 10,
+
+        margin: 20,
       },
-      992: {
+
+      623: {
+        items: 1.24,
+        stagePadding: 10,
+        margin: 20,
+      },
+
+      864: {
         items: 2,
-        stagePadding: 80,
+        stagePadding: 10,
+        margin: 20,
+      },
+    },
+  };
+
+  Tookarizman: OwlOptions = {
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+
+    // autoplay: true,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    rtl: true,
+
+    responsive: {
+      294: {
+        items: 0.99,
+      },
+
+      399: {
+        items: 1,
+        stagePadding: 5,
+      },
+      623: {
+        items: 1.3,
+      },
+      752: {
+        items: 1.8,
+      },
+      604: {
+        items: 1.3,
+      },
+      854: {
+        items: 2.1,
+        stagePadding: 5,
+      },
+      864: {
+        items: 2,
+        stagePadding: 5,
       },
     },
   };
@@ -205,13 +289,15 @@ export class HomeEscape {
       this.karizmanCarousel.prev();
     }
   }
+
+  calculateProgress(startDateGregorian: Date, endDateGregorian: Date): number {
+    const now = new Date();
+    const total = endDateGregorian.getTime() - startDateGregorian.getTime();
+    const elapsed = now.getTime() - startDateGregorian.getTime();
+    const percent = (elapsed / total) * 100;
+    return Math.min(100, Math.max(0, percent)); // بین 0 تا 100 محدودش کن
+  }
   karizmanData: DataTypeKarizman[] = [
-    {
-      img: '/img/mvBTmDqZ73gxnzboDmB5cQ9K2PCRHYmE5IGMcY36_.png',
-      title: 'رویداد ایده پردازی هم سرنوشت',
-      StartTime: 'از 12 اردیبهشت 1405',
-      EndTime: 'تا 12 اردیبهشت 1406',
-    },
     {
       img: '/img/B0hjpLIPvQUbOawVl6w7csHyNuDLnO7J2aWhoOHn_.png',
       title: 'خدمات خلاق',
@@ -339,9 +425,64 @@ export class HomeEscape {
     },
   ];
 
+  Soog: OwlOptions = {
+    loop: true,
+    nav: false,
+    dots: false,
+
+    // autoplay: true,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    rtl: true,
+    margin: 15,
+    responsive: {
+      0: {
+        items: 0.1,
+        // stagePadding: 0,
+      },
+      304: {
+        items: 0.99,
+      },
+      401: {
+        items: 1,
+        stagePadding: 10,
+      },
+
+      615: {
+        items: 1.7,
+      },
+      623: {
+        items: 1.7
+                  ,
+      },
+
+      752: {
+        items: 1.9,
+      },
+
+      425: {
+        items: 1.8,
+        stagePadding: 10,
+
+        margin: 20,
+      },
+
+
+
+      864: {
+        items: 2,
+        stagePadding: 10,
+        margin: 20,
+      },
+    },
+  };
+
   Soogdata: DataTypeSoog[] = [
     {
-      img: '/img/IMuevppK6Jgvlrv1jQkC9kL2gZHRDv2U3Y1rHLc8.jpg',
+      img: '/img/tljKRLhLCtda8mWVmrTntbX43RT4uQ2AmIuVwxOs.png',
       title: 'موسسه قرآنی تسنیم لنجان',
       melli: 'شناسه ملی',
       melliNumber: 10980211432,

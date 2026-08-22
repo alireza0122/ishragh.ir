@@ -4,20 +4,24 @@
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
 @import "@fortawesome/fontawesome-free/css/all.min.css";
-body{
-  background-color: #ffffff ;
+
+body {
+  background-color: #ffffff;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
+
 /* You can add global styles to this file, and also import other style files */
-li{
+li {
   list-style: none;
 }
-.owl-stage{
-  padding: 17px 0 !important;
-}
+
+//.owl-stage{
+//  padding: 17px 0 !important;
+//}
 .dal-slide-body {
   .owl-stage {
     padding: 20px 0 !important;
@@ -29,23 +33,22 @@ li{
     padding: 15px 0 !important;
   }
 }
-.karizman-slide-body {
-  .owl-stage {
-    padding:  34px 10px 20px 0 !important;
-  }
-}
-.dal-slide-body {
-  .owl-stage {
-    padding:  10px 10px 15px 0 !important;
-  }
-}
 
+//.karizman-slide-body {
+//    padding:  34px 10px 20px 0 !important;
+//}
+//.dal-slide-body {
+//    padding:  10px 10px 15px 0 !important;
+//}
 
 
 .soog-slide {
   .owl-stage {
-    padding: 45px 10px 10px 0 !important;
+    padding: 45px 0 0 0 !important;
   }
+}
+.soog-slide {
+    padding: 1rem 24px 1rem 0  !important;
 }
 
 
@@ -56,31 +59,73 @@ html {
 
 /* موبایل خیلی کوچک */
 @media (max-width: 320px) {
-  .owl-stage{
-    padding: 17px 0 !important;
+  .karizman-slide-body {
+    .owl-stage {
+      padding: 21px 0 !important;
+    }
   }
+  //.soog-slide {
+  //  .owl-stage {
+  //    padding: 40px 20px 0  0 !important;
+  //  }
+  //}
 }
 
 /* موبایل کوچک */
 @media (max-width: 375px) {
-  .owl-stage{
-    padding: 17px 18px !important;
+  //.owl-stage{
+  //  padding: 21px 18px !important;
+  //}
+  .fanos-slide-body {
+    padding: 25px 0 !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .karizman-slide-body {
+    .owl-stage {
+      padding: 20px 0 !important;
+    }
   }
 }
 
 /* موبایل معمولی */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  .soog-slide {
+    .owl-stage {
+      padding: 5rem 0 0 0  !important;
 
+    }
+  }
 }
 
 /* موبایل بزرگ / تبلت کوچک */
 @media (max-width: 576px) {
-
+  .fanos-slide-body {
+    padding: 25px 0 !important;
+  }
 }
 
 /* تبلت */
-@media (max-width: 768px) {
+@media (min-width: 426px) {
 
+}
+@media (min-width: 760px) and (max-width: 1024px) {
+  .soog-slide {
+    .owl-stage {
+      padding: 5rem 0 0 0 !important;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .soog-slide {
+    padding: 10px 16px  3rem 0 !important;
+  }
+  .soog-slide {
+    .owl-stage {
+      padding: 6rem 0 0 0 !important;
+    }
+  }
 }
 
 /* تبلت بزرگ / لپ‌تاپ کوچک */
