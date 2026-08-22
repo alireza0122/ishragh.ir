@@ -455,8 +455,7 @@ export class HomeEscape {
         items: 1.7,
       },
       623: {
-        items: 1.7
-                  ,
+        items: 1.7,
       },
 
       752: {
