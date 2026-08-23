@@ -29,10 +29,8 @@ export class HomeNews {
         stagePadding: 40,
         margin: 30,
       },
-      375: {
-        items: 1,
-        stagePadding: 50,
-        margin: 30,
+      351: {
+        items: 1.4,
       },
       425: {
         items: 1,
@@ -47,33 +45,12 @@ export class HomeNews {
       },
 
       610: {
-        items: 4,
-        margin: 30,
-        stagePadding: 30,
+        items: 4.2,
       },
       768: {
-        items: 4,
-        margin: 30,
-        stagePadding: 30,
+        items: 4.2,
       },
-      992: {
-        items: 1,
-        margin: 35,
 
-        // stagePadding: 50  ,
-      },
-      1024: {
-        items: 1,
-        margin: 35,
-
-        // stagePadding: 50  ,
-      },
-      1040: {
-        items: 4,
-        margin: 35,
-
-        stagePadding: 30,
-      },
     },
   };
 

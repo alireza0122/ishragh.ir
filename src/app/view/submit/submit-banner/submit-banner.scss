@@ -102,6 +102,14 @@
   animation: floating 3s ease-in-out infinite;
 }
 
+@media (max-width: 990px) {
+  img{
+    width: 65%!important;
+    animation : none!important;
+    margin: 30px 0;
+  }
+}
+
 
 @keyframes floating {
   0% {

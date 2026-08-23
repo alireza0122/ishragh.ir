@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Peyda";
+  font-family: "IRANSansXFaNum";
   src: url('/font/IRANSansXFaNum-Regular-EPGXJOCV.woff2') format('woff2'),
   url('/font/IRANSansXFaNum-Bold-3PHLRFCW.woff2') format('woff2'),
-  url('/font/IRANSansXFaNum-BlackD4-VQP3VPNW.woff2') format('woff2');
+  url('/font/IRANSansXFaNum-BlackD4-VQP3VPNW.woff2') format('woff2'),
+  url('/font/Iranian Sans.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +11,7 @@
 
 *:not(i) {
   line-height: 1.5;
-  font-family: "Peyda", serif !important;
+  font-family: "IRANSansXFaNum", serif !important;
 
   //font-feature-settings: "kern" on, "liga" on, "calt" on;
   transition: 0.5s ease all;
@@ -218,14 +219,14 @@
 
 
 .fw-bold {
-  font-family: "Peyda", serif !important;
+  font-family: "IRANSansXFaNum" !important;
 
 
   font-weight: bold !important;
 }
 
 .fw-bolder {
-  font-family: "Peyda", serif !important;
+  font-family: "IRANSansXFaNum" !important;
 
 
   font-weight: bold !important;

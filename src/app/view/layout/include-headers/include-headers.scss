@@ -261,3 +261,10 @@
   border-color: rgb(240, 240, 247);
   padding: 8px;
 }
+
+
+@media (max-width: 1024px) and (min-width: 756px) {
+  .nav-link{
+    padding: 13px;
+  }
+}
