@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container ">
   <div class="row">
 
     <div class="col-12 mt-5 mb-3  d-flex justify-content-center">
@@ -9,10 +9,10 @@
         <div class="dd"></div>
       </div>
     </div>
-    <div class="col-12 mt-5">
+    <div class="col-12 mt-lg-5">
       <div class="row">
         @for (item of version; track item.id) {
-          <div class="col-3">
+          <div class="col-12 col-lg-3 mt-5 mt-lg-0 px-4">
             <div class="version-item p-2  ">
               <div class="version-item-title" [style.background-color]="item.color">
                 <p class="fs-18px m-0 fs-18px"> {{ item.title }}</p>
@@ -22,7 +22,7 @@
                 @for (feature of item.features;
                   track feature.title) {
 
-                  <div class="version-item-feature py-1">
+                  <div class="version-item-feature py-1 px-2">
 
                     @if (feature.available) {
 
@@ -62,12 +62,12 @@
                   </div>
                 </div>
                 <div class="version-item-box-price d-flex justify-content-center gap-3 mt-4 align-items-center">
-                  <p class="fs-32px m-0 fw-bold">
+                  <p class="fs-lg-32px fs-20px m-0 fw-bold">
                     {{ item.price }}
                   </p>
                   <img src="/img/toman.svg" alt="toman">
                 </div>
-                <div class="version-item-box-bottom">
+                <div class="version-item-box-bottom px-3 pb-3">
                   <button class="version-item-box-bottom-btn fs-18px fw-bold py-2">
                     {{ item.button.text }}
                   </button>
@@ -82,7 +82,7 @@
       </div>
     </div>
     <div class="col-12">
-      <ul class="mt-3">
+      <ul class="mt-3 pe-4 p-0">
         <li class="list-style ps-2">
           <a class="fw-bold text fs-16px" href="/show">
             برای شخصی‌سازی طراحی صفحات و دریافت نسخه‌ای اختصاصی‌تر با ما تماس بگیرید.

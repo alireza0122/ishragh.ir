@@ -7,10 +7,10 @@
     position: absolute !important;
     background-color: #2155cd;
     width: 50%;
-    top: -10px;
+    top: -2px;
+    transform: translate(-50%, -50%);
     left: 50%;
     color: white;
-    transform: translate(-50%, -50%);
     border-radius: 10px;
     text-align: center;
     padding: 7px 0;
@@ -94,9 +94,9 @@
 
   &::before {
     content: "";
-    background-color: #2a2e6b;
-    width: 10px;
-    height: 10px;
+    background-color:  rgb(33, 85, 205);
+    width: 8px;
+    height: 8px;
     position: absolute;
     right: -20px;
     top: 50%;
@@ -105,7 +105,9 @@
   }
 }
 
-
+.version-item-box-price{
+  color: #2155CD;
+}
 
 
 

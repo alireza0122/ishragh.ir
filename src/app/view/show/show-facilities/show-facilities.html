@@ -1,4 +1,4 @@
-<div class="mt-5">
+<div class="mt-5 ">
   <div class="container-fluid mx-auto px-5 ">
     <div class="row">
       <div class="col-12  d-flex justify-content-center">
@@ -14,15 +14,15 @@
   <div class="container-fluid  show-facilities">
     <div class="row ">
       @for (item of newsdata; track $index) {
-        <div class="col-4 my-4 ">
+        <div class="col-12 col-lg-4 my-4 ">
           <div class="facilities-item my-2">
             <div class="facilities-item-img">
               <img class="facilities-item-img-top" [src]="item.img" [alt]="item.title">
             </div>
 
-            <h3 class="facilities-item-title fs-124px text-center fw-bold  text-justify text-over o1 mt-2">{{ item.title }}</h3>
+            <h3 class="facilities-item-title fs-20px fs-lg-20px text-center fw-bold  text-justify text-over o1 mt-2">{{ item.title }}</h3>
             <div class="d-flex justify-content-center">
-              <p class="m w-50 fs-18px text-center ">{{item.description}}</p>
+              <p class="mw-50 fs-18px fs-lg-20px text-center ">{{item.description}}</p>
             </div>
 
           </div>
