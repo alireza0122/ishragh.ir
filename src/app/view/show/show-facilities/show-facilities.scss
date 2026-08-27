@@ -1,6 +1,10 @@
 .show-facilities {
   background-color: #f8f8f8;
-  border-radius: 250px 250px 0 0;
+
+  border-radius: 50% / 15px;
+  border-top-right-radius: 50% / 40px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .facilities-item {
@@ -17,7 +21,7 @@
   }
 
   &-title {
-    color: #2a2e6b;
+    color: #255dca;
   }
 
 
@@ -46,15 +50,15 @@
 .dd {
   position: absolute;
   background-color: #ebb26c;
-  width: 100px;
+  width: 50px;
   height: 6px;
-  right: 0;
+  right: 20px;
 }
 
 @media (max-width: 768px) {
-  .show-facilities {
-    border-radius: 80px 80px 0 0;
-  }
+  //.show-facilities {
+  //  border-radius: 80px 80px 0 0;
+  //}
 
   .facilities-item {
     &-img {
@@ -66,12 +70,17 @@
 
   }
   .mw-50{
-    width: 70%;
+    width: 64%;
+  }
+}
+@media (max-width: 425px) {
+  .mw-50{
+    width: 90%;
   }
 }
 @media (min-width: 1024px) {
   .mw-50{
-    width: 50%;
+    width: 90%;
   }
 }
 
