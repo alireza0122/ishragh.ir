@@ -20,7 +20,7 @@ export class ShowFacilities {
     {
       img: '/img/showlogo/lOGO01.png',
       title: 'پنل مدیریتی',
-      description: 'مدیریت، تعریف، بارگذاری، ویرایش، نظارت، انتشار و ...',
+      description: 'مدیریت، تعریف، بارگذاری، ویرایش، نظارت، انتشار و ... با امکان تعیین دسترسی افراد متعدد ',
     },
     {
       img: '/img/showlogo/lOGO02.png',
